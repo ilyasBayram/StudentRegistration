@@ -64,6 +64,7 @@ namespace StudentRegistration_2
             this.btnSave.TabIndex = 45;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = false;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // lblStudentParentAdress
             // 
