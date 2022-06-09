@@ -84,7 +84,7 @@ namespace StudentRegistration_2
             this.rchTxBoxParentAdress.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rchTxBoxParentAdress.Name = "rchTxBoxParentAdress";
             this.rchTxBoxParentAdress.Size = new System.Drawing.Size(252, 119);
-            this.rchTxBoxParentAdress.TabIndex = 43;
+            this.rchTxBoxParentAdress.TabIndex = 11;
             this.rchTxBoxParentAdress.Text = "";
             // 
             // mskdTxBoxStudentparentPhone
@@ -96,7 +96,7 @@ namespace StudentRegistration_2
             this.mskdTxBoxStudentparentPhone.Mask = "(999) 000-0000";
             this.mskdTxBoxStudentparentPhone.Name = "mskdTxBoxStudentparentPhone";
             this.mskdTxBoxStudentparentPhone.Size = new System.Drawing.Size(253, 30);
-            this.mskdTxBoxStudentparentPhone.TabIndex = 42;
+            this.mskdTxBoxStudentparentPhone.TabIndex = 10;
             // 
             // lblStudentParentSurname
             // 
@@ -116,7 +116,7 @@ namespace StudentRegistration_2
             this.txBoxStudentParentName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txBoxStudentParentName.Name = "txBoxStudentParentName";
             this.txBoxStudentParentName.Size = new System.Drawing.Size(253, 30);
-            this.txBoxStudentParentName.TabIndex = 40;
+            this.txBoxStudentParentName.TabIndex = 9;
             // 
             // lblStudentParentName
             // 
@@ -137,7 +137,7 @@ namespace StudentRegistration_2
             this.cmbBoxStudentRoomNo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmbBoxStudentRoomNo.Name = "cmbBoxStudentRoomNo";
             this.cmbBoxStudentRoomNo.Size = new System.Drawing.Size(253, 33);
-            this.cmbBoxStudentRoomNo.TabIndex = 38;
+            this.cmbBoxStudentRoomNo.TabIndex = 8;
             // 
             // lblStudentRoomNo
             // 
@@ -167,7 +167,7 @@ namespace StudentRegistration_2
             this.txBoxStudentMail.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txBoxStudentMail.Name = "txBoxStudentMail";
             this.txBoxStudentMail.Size = new System.Drawing.Size(253, 30);
-            this.txBoxStudentMail.TabIndex = 35;
+            this.txBoxStudentMail.TabIndex = 7;
             // 
             // cmbBoxStudentDepartment
             // 
@@ -178,7 +178,7 @@ namespace StudentRegistration_2
             this.cmbBoxStudentDepartment.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmbBoxStudentDepartment.Name = "cmbBoxStudentDepartment";
             this.cmbBoxStudentDepartment.Size = new System.Drawing.Size(253, 33);
-            this.cmbBoxStudentDepartment.TabIndex = 34;
+            this.cmbBoxStudentDepartment.TabIndex = 6;
             // 
             // lblStudentDepartment
             // 
@@ -209,7 +209,7 @@ namespace StudentRegistration_2
             this.mskdTxBoxStudentBirth.Mask = "00/00/0000";
             this.mskdTxBoxStudentBirth.Name = "mskdTxBoxStudentBirth";
             this.mskdTxBoxStudentBirth.Size = new System.Drawing.Size(253, 30);
-            this.mskdTxBoxStudentBirth.TabIndex = 31;
+            this.mskdTxBoxStudentBirth.TabIndex = 5;
             this.mskdTxBoxStudentBirth.ValidatingType = typeof(System.DateTime);
             // 
             // lblStudentPhone
@@ -231,7 +231,7 @@ namespace StudentRegistration_2
             this.mskdTxBoxStudentPhone.Mask = "(999) 000-0000";
             this.mskdTxBoxStudentPhone.Name = "mskdTxBoxStudentPhone";
             this.mskdTxBoxStudentPhone.Size = new System.Drawing.Size(253, 30);
-            this.mskdTxBoxStudentPhone.TabIndex = 29;
+            this.mskdTxBoxStudentPhone.TabIndex = 4;
             // 
             // mskdTxBoxStudentNatioanlNumber
             // 
@@ -242,7 +242,7 @@ namespace StudentRegistration_2
             this.mskdTxBoxStudentNatioanlNumber.Mask = "00000000000";
             this.mskdTxBoxStudentNatioanlNumber.Name = "mskdTxBoxStudentNatioanlNumber";
             this.mskdTxBoxStudentNatioanlNumber.Size = new System.Drawing.Size(253, 30);
-            this.mskdTxBoxStudentNatioanlNumber.TabIndex = 28;
+            this.mskdTxBoxStudentNatioanlNumber.TabIndex = 3;
             this.mskdTxBoxStudentNatioanlNumber.ValidatingType = typeof(int);
             // 
             // lblStudentNationalNumber
@@ -263,7 +263,7 @@ namespace StudentRegistration_2
             this.txBoxStudentSurname.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txBoxStudentSurname.Name = "txBoxStudentSurname";
             this.txBoxStudentSurname.Size = new System.Drawing.Size(253, 30);
-            this.txBoxStudentSurname.TabIndex = 26;
+            this.txBoxStudentSurname.TabIndex = 2;
             // 
             // lblStudentSurname
             // 
@@ -283,7 +283,7 @@ namespace StudentRegistration_2
             this.txBoxStudentName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txBoxStudentName.Name = "txBoxStudentName";
             this.txBoxStudentName.Size = new System.Drawing.Size(253, 30);
-            this.txBoxStudentName.TabIndex = 24;
+            this.txBoxStudentName.TabIndex = 1;
             // 
             // lblStudentName
             // 
@@ -297,10 +297,12 @@ namespace StudentRegistration_2
             // 
             // Form1
             // 
+            this.AcceptButton = this.btnSave;
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(188)))), ((int)(((byte)(156)))));
-            this.ClientSize = new System.Drawing.Size(700, 720);
+            this.ClientSize = new System.Drawing.Size(664, 720);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.lblStudentParentAdress);
             this.Controls.Add(this.rchTxBoxParentAdress);
@@ -324,8 +326,10 @@ namespace StudentRegistration_2
             this.Controls.Add(this.lblStudentSurname);
             this.Controls.Add(this.txBoxStudentName);
             this.Controls.Add(this.lblStudentName);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Student Registration";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
