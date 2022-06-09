@@ -49,24 +49,39 @@ namespace StudentRegistration_2
             //this connection adds informations coming from registration form to database
             //when save button is clicked.
 
-            connection.Open();
+            try
+            {
+                connection.Open();
 
-            SqlCommand save = new SqlCommand("insert into tblstudent (StudentName,StudentSurname,StudentNationalNumber,StudentPhone,StudentBirthDay,StudentDepartment,StudentMail,StudentRoomNo,StudentParentName,StudentParentPhone,StudentParentAdress) values(@p1,@p2,@p3,@p4,@p5,@p6,@p7,@p8,@p9,@p10,@p11)", connection);
-            save.Parameters.AddWithValue("@p1", txBoxStudentName.Text);
-            save.Parameters.AddWithValue("@p2", txBoxStudentSurname.Text);
-            save.Parameters.AddWithValue("@p3", mskdTxBoxStudentNatioanlNumber.Text);
-            save.Parameters.AddWithValue("@p4", mskdTxBoxStudentPhone.Text);
-            save.Parameters.AddWithValue("@p5", mskdTxBoxStudentBirth.Text);
-            save.Parameters.AddWithValue("@p6", cmbBoxStudentDepartment.Text);
-            save.Parameters.AddWithValue("@p7", txBoxStudentMail.Text);
-            save.Parameters.AddWithValue("@p8", cmbBoxStudentRoomNo.Text);
-            save.Parameters.AddWithValue("@p9", txBoxStudentParentName.Text);
-            save.Parameters.AddWithValue("@p10", mskdTxBoxStudentparentPhone.Text);
-            save.Parameters.AddWithValue("@p11", rchTxBoxParentAdress.Text);
+                SqlCommand save = new SqlCommand("insert into tblstudent (StudentName,StudentSurname," +
+                    "StudentNationalNumber,StudentPhone,StudentBirthDay,StudentDepartment," +
+                    "StudentMail,StudentRoomNo,StudentParentName,StudentParentPhone,StudentParentAdress) " +
+                    "values(@p1,@p2,@p3,@p4,@p5,@p6,@p7,@p8,@p9,@p10,@p11)", connection);
 
-            save.ExecuteNonQuery();
+                save.Parameters.AddWithValue("@p1", txBoxStudentName.Text);
+                save.Parameters.AddWithValue("@p2", txBoxStudentSurname.Text);
+                save.Parameters.AddWithValue("@p3", mskdTxBoxStudentNatioanlNumber.Text);
+                save.Parameters.AddWithValue("@p4", mskdTxBoxStudentPhone.Text);
+                save.Parameters.AddWithValue("@p5", mskdTxBoxStudentBirth.Text);
+                save.Parameters.AddWithValue("@p6", cmbBoxStudentDepartment.Text);
+                save.Parameters.AddWithValue("@p7", txBoxStudentMail.Text);
+                save.Parameters.AddWithValue("@p8", cmbBoxStudentRoomNo.Text);
+                save.Parameters.AddWithValue("@p9", txBoxStudentParentName.Text);
+                save.Parameters.AddWithValue("@p10", mskdTxBoxStudentparentPhone.Text);
+                save.Parameters.AddWithValue("@p11", rchTxBoxParentAdress.Text);
 
-            connection.Close();
+                save.ExecuteNonQuery();
+
+                connection.Close();
+
+                MessageBox.Show("Successfull resgistration.");
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("Warninng!!!. Please check informations.");
+            }
+            
         }
     }
 }
