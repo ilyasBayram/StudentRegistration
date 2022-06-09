@@ -19,15 +19,8 @@ namespace StudentRegistration_2
         }
 
 
-        SqlConnection connection = new SqlConnection(@"Data Source=NB3401-0011;Initial Catalog=DbDormitoryRegistration;Integrated Security=True");
+        mySqlConnection connection = new mySqlConnection();
 
-        private void emptyTxBox()
-        {
-            if (txBoxDepartmentName==null)
-            {
-
-            }
-        }
 
         private void Departments_Load(object sender, EventArgs e)
         {
@@ -48,17 +41,18 @@ namespace StudentRegistration_2
             {
                 try
                 {
-                    connection.Open();
-                    SqlCommand commandAdd = new SqlCommand("insert into TblDepartment (DepartmentName) values (@p1)", connection);
+
+                    SqlCommand commandAdd = new SqlCommand("insert into TblDepartment (DepartmentName) values (@p1)", connection.connection());
                     commandAdd.Parameters.AddWithValue("@p1", txBoxDepartmentName.Text);
                     commandAdd.ExecuteNonQuery();
-                    MessageBox.Show("New departmen is added");
+                    connection.connection().Close();
+                    MessageBox.Show("New department is added");
                     this.tblDepartmentTableAdapter.Fill(this.dbDormitoryRegistrationDataSet.TblDepartment);
                 }
                 catch (Exception)
                 {
 
-                    MessageBox.Show("Warning!! Problem occured. Please try again");
+                    MessageBox.Show("Warning!! Problem occured. Please try again", "Warning");
                 }
             }
             
@@ -69,11 +63,11 @@ namespace StudentRegistration_2
         {
             try
             {
-                connection.Open();
-                SqlCommand commandDelete = new SqlCommand("delete from TblDepartment where departmentID =@p1", connection);
+   
+                SqlCommand commandDelete = new SqlCommand("delete from TblDepartment where departmentID =@p1", connection.connection());
                 commandDelete.Parameters.AddWithValue("@p1", txBoxDepartmentID.Text);
                 commandDelete.ExecuteNonQuery();
-                connection.Close();
+                connection.connection().Close();
 
                 MessageBox.Show("Deletion is successfull");
                 this.tblDepartmentTableAdapter.Fill(this.dbDormitoryRegistrationDataSet.TblDepartment);
@@ -97,6 +91,27 @@ namespace StudentRegistration_2
             txBoxDepartmentID.Text = departmentID;
             txBoxDepartmentName.Text = departmentName;
 
+        }
+
+        private void btnEdit_Click(object sender, EventArgs e)
+        {
+            try
+            {
+
+                SqlCommand commandUpdate = new SqlCommand("update TblDepartment set DepartmentName=@p1 where DepartmentID=@p2", connection.connection());
+                commandUpdate.Parameters.AddWithValue("@p1", txBoxDepartmentName.Text);
+                commandUpdate.Parameters.AddWithValue("@p2", txBoxDepartmentID.Text);
+                commandUpdate.ExecuteNonQuery();
+                connection.connection().Close();
+                MessageBox.Show("Department name is updated");
+                this.tblDepartmentTableAdapter.Fill(this.dbDormitoryRegistrationDataSet.TblDepartment);
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("Warning!! Problem occured. Please try again", "Warning");
+            }
+            
         }
     }
 }

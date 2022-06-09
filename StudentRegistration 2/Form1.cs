@@ -18,30 +18,28 @@ namespace StudentRegistration_2
             InitializeComponent();
         }
 
-        SqlConnection connection = new SqlConnection(@"Data Source=NB3401-0011;Initial Catalog=DbDormitoryRegistration;Integrated Security=True");
+        mySqlConnection connection = new mySqlConnection();
 
         private void Form1_Load(object sender, EventArgs e)
         {
             //Department name from depertment table is taken with that connection
-            connection.Open();
-            SqlCommand commendDep = new SqlCommand("select departmentName from TblDepartment ", connection);
+            SqlCommand commendDep = new SqlCommand("select departmentName from TblDepartment ", connection.connection());
             SqlDataReader readDep = commendDep.ExecuteReader();
             while (readDep.Read())
             {
                 cmbBoxStudentDepartment.Items.Add(readDep[0].ToString());
             }
-            connection.Close();
+            connection.connection().Close();
 
             //Number of rooms which is available for antoher person is taken from room table
             //with that connection
-            connection.Open();
-            SqlCommand commendRoom= new SqlCommand("select roomno from TblRoom where roomcapacity!=roomactive", connection);
+            SqlCommand commendRoom= new SqlCommand("select roomno from TblRoom where roomcapacity!=roomactive", connection.connection());
             SqlDataReader readRoom = commendRoom.ExecuteReader();
             while (readRoom.Read())
             {
                 cmbBoxStudentRoomNo.Items.Add(readRoom[0].ToString());
             }
-            connection.Close();
+            connection.connection().Close();
         }
 
         private void btnSave_Click(object sender, EventArgs e)
@@ -51,12 +49,11 @@ namespace StudentRegistration_2
 
             try
             {
-                connection.Open();
 
                 SqlCommand save = new SqlCommand("insert into tblstudent (StudentName,StudentSurname," +
                     "StudentNationalNumber,StudentPhone,StudentBirthDay,StudentDepartment," +
                     "StudentMail,StudentRoomNo,StudentParentName,StudentParentPhone,StudentParentAdress) " +
-                    "values(@p1,@p2,@p3,@p4,@p5,@p6,@p7,@p8,@p9,@p10,@p11)", connection);
+                    "values(@p1,@p2,@p3,@p4,@p5,@p6,@p7,@p8,@p9,@p10,@p11)", connection.connection());
 
                 save.Parameters.AddWithValue("@p1", txBoxStudentName.Text);
                 save.Parameters.AddWithValue("@p2", txBoxStudentSurname.Text);
@@ -72,7 +69,7 @@ namespace StudentRegistration_2
 
                 save.ExecuteNonQuery();
 
-                connection.Close();
+                connection.connection().Close();
 
                 MessageBox.Show("Successfull resgistration.");
             }

@@ -44,6 +44,7 @@ namespace StudentRegistration_2
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnEdit = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblDepartmentBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dbDormitoryRegistrationDataSet)).BeginInit();
@@ -141,6 +142,7 @@ namespace StudentRegistration_2
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(75, 62);
             this.btnDelete.TabIndex = 3;
+            this.toolTip1.SetToolTip(this.btnDelete, "Delete department");
             this.btnDelete.UseVisualStyleBackColor = true;
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
@@ -152,7 +154,9 @@ namespace StudentRegistration_2
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Size = new System.Drawing.Size(75, 62);
             this.btnEdit.TabIndex = 8;
+            this.toolTip1.SetToolTip(this.btnEdit, "Update department name");
             this.btnEdit.UseVisualStyleBackColor = true;
+            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
             // btnAdd
             // 
@@ -162,6 +166,7 @@ namespace StudentRegistration_2
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(75, 62);
             this.btnAdd.TabIndex = 9;
+            this.toolTip1.SetToolTip(this.btnAdd, "Add new department");
             this.btnAdd.UseVisualStyleBackColor = true;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
@@ -207,5 +212,6 @@ namespace StudentRegistration_2
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Button btnEdit;
         private System.Windows.Forms.Button btnAdd;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }
