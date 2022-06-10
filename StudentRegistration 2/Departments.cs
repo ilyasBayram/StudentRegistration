@@ -42,7 +42,7 @@ namespace StudentRegistration_2
             {
                 try
                 {
-
+                    //it adds new departmen names to table.
                     SqlCommand commandAdd = new SqlCommand("insert into TblDepartment (DepartmentName) values (@p1)", connection.connection());
                     commandAdd.Parameters.AddWithValue("@p1", txBoxDepartmentName.Text);
                     commandAdd.ExecuteNonQuery();
@@ -64,7 +64,7 @@ namespace StudentRegistration_2
         {
             try
             {
-   
+                // it deletes data from table of department.
                 SqlCommand commandDelete = new SqlCommand("delete from TblDepartment where departmentID =@p1", connection.connection());
                 commandDelete.Parameters.AddWithValue("@p1", txBoxDepartmentID.Text);
                 commandDelete.ExecuteNonQuery();
@@ -85,6 +85,7 @@ namespace StudentRegistration_2
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
+            // it reads data when the a row clicked and those datas will be appear on textboxes.
             string departmentID, departmentName;
             choosen = dataGridView1.SelectedCells[0].RowIndex;
             departmentID = dataGridView1.Rows[choosen].Cells[0].Value.ToString();
@@ -99,7 +100,7 @@ namespace StudentRegistration_2
         {
             try
             {
-
+                //it edits department names on department name column.
                 SqlCommand commandUpdate = new SqlCommand("update TblDepartment set DepartmentName=@p1 where DepartmentID=@p2", connection.connection());
                 commandUpdate.Parameters.AddWithValue("@p1", txBoxDepartmentName.Text);
                 commandUpdate.Parameters.AddWithValue("@p2", txBoxDepartmentID.Text);
