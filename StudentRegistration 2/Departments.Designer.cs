@@ -62,6 +62,7 @@ namespace StudentRegistration_2
             // 
             // txBoxDepartmentID
             // 
+            this.txBoxDepartmentID.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(196)))), ((int)(((byte)(15)))));
             this.txBoxDepartmentID.Enabled = false;
             this.txBoxDepartmentID.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txBoxDepartmentID.Location = new System.Drawing.Point(249, 22);
@@ -71,6 +72,7 @@ namespace StudentRegistration_2
             // 
             // txBoxDepartmentName
             // 
+            this.txBoxDepartmentName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(196)))), ((int)(((byte)(15)))));
             this.txBoxDepartmentName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txBoxDepartmentName.Location = new System.Drawing.Point(249, 73);
             this.txBoxDepartmentName.Name = "txBoxDepartmentName";
@@ -101,7 +103,7 @@ namespace StudentRegistration_2
             this.dataGridView1.RowTemplate.Height = 28;
             this.dataGridView1.Size = new System.Drawing.Size(799, 286);
             this.dataGridView1.TabIndex = 7;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
             // departmentIDDataGridViewTextBoxColumn
             // 

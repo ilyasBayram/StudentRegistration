@@ -68,7 +68,24 @@ namespace StudentRegistration_2
                 save.Parameters.AddWithValue("@p11", rchTxBoxParentAdress.Text);
 
                 save.ExecuteNonQuery();
+                connection.connection().Close();
 
+                // Getting Student id from student table and write it on the label.
+                SqlCommand command = new SqlCommand("select StudentID from TblStudent", connection.connection());
+                SqlDataReader read = command.ExecuteReader();
+                while (read.Read())
+                {
+                    lblSecretStudentID.Text = read[0].ToString();
+                }
+                connection.connection().Close();
+
+
+                //Enterimg values to dabt table. We get student id from lbl that is its visible is false.
+                SqlCommand commandSavetwo = new SqlCommand("insert into Tbldebt (StudentID,StudentName,StudentSurname) values (@d1,@d2,@d3)", connection.connection());
+                commandSavetwo.Parameters.AddWithValue("@d1", lblSecretStudentID.Text);
+                commandSavetwo.Parameters.AddWithValue("@d2", txBoxStudentName.Text);
+                commandSavetwo.Parameters.AddWithValue("@d3", txBoxStudentSurname.Text);
+                commandSavetwo.ExecuteNonQuery();
                 connection.connection().Close();
 
                 MessageBox.Show("Successfull resgistration.");

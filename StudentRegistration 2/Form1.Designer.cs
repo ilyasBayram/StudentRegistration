@@ -52,6 +52,7 @@ namespace StudentRegistration_2
             this.lblStudentSurname = new System.Windows.Forms.Label();
             this.txBoxStudentName = new System.Windows.Forms.TextBox();
             this.lblStudentName = new System.Windows.Forms.Label();
+            this.lblSecretStudentID = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnSave
@@ -295,6 +296,17 @@ namespace StudentRegistration_2
             this.lblStudentName.TabIndex = 23;
             this.lblStudentName.Text = "Student Name :";
             // 
+            // lblSecretStudentID
+            // 
+            this.lblSecretStudentID.AutoSize = true;
+            this.lblSecretStudentID.Enabled = false;
+            this.lblSecretStudentID.Location = new System.Drawing.Point(230, 619);
+            this.lblSecretStudentID.Name = "lblSecretStudentID";
+            this.lblSecretStudentID.Size = new System.Drawing.Size(51, 20);
+            this.lblSecretStudentID.TabIndex = 46;
+            this.lblSecretStudentID.Text = "label1";
+            this.lblSecretStudentID.Visible = false;
+            // 
             // Form1
             // 
             this.AcceptButton = this.btnSave;
@@ -303,6 +315,7 @@ namespace StudentRegistration_2
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(188)))), ((int)(((byte)(156)))));
             this.ClientSize = new System.Drawing.Size(664, 720);
+            this.Controls.Add(this.lblSecretStudentID);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.lblStudentParentAdress);
             this.Controls.Add(this.rchTxBoxParentAdress);
@@ -361,5 +374,6 @@ namespace StudentRegistration_2
         private System.Windows.Forms.Label lblStudentSurname;
         private System.Windows.Forms.TextBox txBoxStudentName;
         private System.Windows.Forms.Label lblStudentName;
+        private System.Windows.Forms.Label lblSecretStudentID;
     }
 }

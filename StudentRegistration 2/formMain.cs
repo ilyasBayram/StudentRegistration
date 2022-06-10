@@ -29,5 +29,7 @@ namespace StudentRegistration_2
             lblDate.Text = DateTime.Now.ToLongDateString();
             lblHour.Text = DateTime.Now.ToLongTimeString();
         }
+
+
     }
 }

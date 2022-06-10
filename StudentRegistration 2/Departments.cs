@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace StudentRegistration_2
 {
     public partial class Departments : Form
@@ -82,7 +83,7 @@ namespace StudentRegistration_2
         }
         int choosen;
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             string departmentID, departmentName;
             choosen = dataGridView1.SelectedCells[0].RowIndex;
@@ -92,6 +93,7 @@ namespace StudentRegistration_2
             txBoxDepartmentName.Text = departmentName;
 
         }
+
 
         private void btnEdit_Click(object sender, EventArgs e)
         {
@@ -113,5 +115,7 @@ namespace StudentRegistration_2
             }
             
         }
+
+       
     }
 }

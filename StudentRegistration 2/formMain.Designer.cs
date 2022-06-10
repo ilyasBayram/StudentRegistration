@@ -36,6 +36,8 @@ namespace StudentRegistration_2
             this.studentListToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.updateStudentListToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.departmentsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.departmentUpdateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.roomsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.paymentsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.studentLoanToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.expensesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -47,27 +49,25 @@ namespace StudentRegistration_2
             this.newPasswordToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.newUserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.newPersonelToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.roomsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.departmentUpdateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.easyAccessToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.calculatorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panintToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.dbDormitoryRegistrationDataSet1 = new StudentRegistration_2.DbDormitoryRegistrationDataSet1();
-            this.tblStudentBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.tblStudentTableAdapter = new StudentRegistration_2.DbDormitoryRegistrationDataSet1TableAdapters.TblStudentTableAdapter();
             this.studentIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.studentNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.studentSurnameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.studentRoomNoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tblStudentBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dbDormitoryRegistrationDataSet1 = new StudentRegistration_2.DbDormitoryRegistrationDataSet1();
+            this.tblStudentTableAdapter = new StudentRegistration_2.DbDormitoryRegistrationDataSet1TableAdapters.TblStudentTableAdapter();
             this.lblDate = new System.Windows.Forms.Label();
             this.lblHour = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dbDormitoryRegistrationDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblStudentBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dbDormitoryRegistrationDataSet1)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -111,7 +111,7 @@ namespace StudentRegistration_2
             // 
             this.studentListToolStripMenuItem.Name = "studentListToolStripMenuItem";
             this.studentListToolStripMenuItem.Size = new System.Drawing.Size(294, 34);
-            this.studentListToolStripMenuItem.Text = "Student List";
+            this.studentListToolStripMenuItem.Text = "Student list";
             // 
             // updateStudentListToolStripMenuItem
             // 
@@ -127,6 +127,18 @@ namespace StudentRegistration_2
             this.departmentsToolStripMenuItem.Size = new System.Drawing.Size(150, 30);
             this.departmentsToolStripMenuItem.Text = "Departments";
             // 
+            // departmentUpdateToolStripMenuItem
+            // 
+            this.departmentUpdateToolStripMenuItem.Name = "departmentUpdateToolStripMenuItem";
+            this.departmentUpdateToolStripMenuItem.Size = new System.Drawing.Size(302, 34);
+            this.departmentUpdateToolStripMenuItem.Text = "Department update";
+            // 
+            // roomsToolStripMenuItem
+            // 
+            this.roomsToolStripMenuItem.Name = "roomsToolStripMenuItem";
+            this.roomsToolStripMenuItem.Size = new System.Drawing.Size(93, 30);
+            this.roomsToolStripMenuItem.Text = "Rooms";
+            // 
             // paymentsToolStripMenuItem
             // 
             this.paymentsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -138,7 +150,7 @@ namespace StudentRegistration_2
             // studentLoanToolStripMenuItem
             // 
             this.studentLoanToolStripMenuItem.Name = "studentLoanToolStripMenuItem";
-            this.studentLoanToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.studentLoanToolStripMenuItem.Size = new System.Drawing.Size(237, 34);
             this.studentLoanToolStripMenuItem.Text = "Student loan";
             // 
             // expensesToolStripMenuItem
@@ -152,7 +164,7 @@ namespace StudentRegistration_2
             // addeExspenseToolStripMenuItem
             // 
             this.addeExspenseToolStripMenuItem.Name = "addeExspenseToolStripMenuItem";
-            this.addeExspenseToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.addeExspenseToolStripMenuItem.Size = new System.Drawing.Size(248, 34);
             this.addeExspenseToolStripMenuItem.Text = "Add exspense";
             // 
             // statisticsToolStripMenuItem
@@ -204,18 +216,6 @@ namespace StudentRegistration_2
             this.newPersonelToolStripMenuItem.Size = new System.Drawing.Size(272, 34);
             this.newPersonelToolStripMenuItem.Text = "Personel update";
             // 
-            // roomsToolStripMenuItem
-            // 
-            this.roomsToolStripMenuItem.Name = "roomsToolStripMenuItem";
-            this.roomsToolStripMenuItem.Size = new System.Drawing.Size(93, 30);
-            this.roomsToolStripMenuItem.Text = "Rooms";
-            // 
-            // departmentUpdateToolStripMenuItem
-            // 
-            this.departmentUpdateToolStripMenuItem.Name = "departmentUpdateToolStripMenuItem";
-            this.departmentUpdateToolStripMenuItem.Size = new System.Drawing.Size(302, 34);
-            this.departmentUpdateToolStripMenuItem.Text = "Department update";
-            // 
             // easyAccessToolStripMenuItem
             // 
             this.easyAccessToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -229,19 +229,19 @@ namespace StudentRegistration_2
             // calculatorToolStripMenuItem
             // 
             this.calculatorToolStripMenuItem.Name = "calculatorToolStripMenuItem";
-            this.calculatorToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.calculatorToolStripMenuItem.Size = new System.Drawing.Size(215, 34);
             this.calculatorToolStripMenuItem.Text = "Calculator";
             // 
             // panintToolStripMenuItem
             // 
             this.panintToolStripMenuItem.Name = "panintToolStripMenuItem";
-            this.panintToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.panintToolStripMenuItem.Size = new System.Drawing.Size(215, 34);
             this.panintToolStripMenuItem.Text = "Panint";
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(215, 34);
             this.exitToolStripMenuItem.Text = "Exit";
             // 
             // dataGridView1
@@ -260,20 +260,6 @@ namespace StudentRegistration_2
             this.dataGridView1.RowTemplate.Height = 28;
             this.dataGridView1.Size = new System.Drawing.Size(776, 343);
             this.dataGridView1.TabIndex = 1;
-            // 
-            // dbDormitoryRegistrationDataSet1
-            // 
-            this.dbDormitoryRegistrationDataSet1.DataSetName = "DbDormitoryRegistrationDataSet1";
-            this.dbDormitoryRegistrationDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // tblStudentBindingSource
-            // 
-            this.tblStudentBindingSource.DataMember = "TblStudent";
-            this.tblStudentBindingSource.DataSource = this.dbDormitoryRegistrationDataSet1;
-            // 
-            // tblStudentTableAdapter
-            // 
-            this.tblStudentTableAdapter.ClearBeforeFill = true;
             // 
             // studentIDDataGridViewTextBoxColumn
             // 
@@ -308,6 +294,20 @@ namespace StudentRegistration_2
             this.studentRoomNoDataGridViewTextBoxColumn.MinimumWidth = 8;
             this.studentRoomNoDataGridViewTextBoxColumn.Name = "studentRoomNoDataGridViewTextBoxColumn";
             this.studentRoomNoDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // tblStudentBindingSource
+            // 
+            this.tblStudentBindingSource.DataMember = "TblStudent";
+            this.tblStudentBindingSource.DataSource = this.dbDormitoryRegistrationDataSet1;
+            // 
+            // dbDormitoryRegistrationDataSet1
+            // 
+            this.dbDormitoryRegistrationDataSet1.DataSetName = "DbDormitoryRegistrationDataSet1";
+            this.dbDormitoryRegistrationDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // tblStudentTableAdapter
+            // 
+            this.tblStudentTableAdapter.ClearBeforeFill = true;
             // 
             // lblDate
             // 
@@ -350,8 +350,8 @@ namespace StudentRegistration_2
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dbDormitoryRegistrationDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblStudentBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dbDormitoryRegistrationDataSet1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -35,6 +35,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Messaging" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -56,6 +57,16 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DbDormitoryRegistrationDataSet1.xsd</DependentUpon>
     </Compile>
+    <Compile Include="DbDormitoryRegistrationDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DbDormitoryRegistrationDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DbDormitoryRegistrationDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DbDormitoryRegistrationDataSet3.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Departments.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -67,6 +78,12 @@
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formDebt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formDebt.Designer.cs">
+      <DependentUpon>formDebt.cs</DependentUpon>
     </Compile>
     <Compile Include="formMain.cs">
       <SubType>Form</SubType>
@@ -82,6 +99,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formDebt.resx">
+      <DependentUpon>formDebt.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="formMain.resx">
       <DependentUpon>formMain.cs</DependentUpon>
@@ -116,6 +136,28 @@
     </None>
     <None Include="DbDormitoryRegistrationDataSet1.xss">
       <DependentUpon>DbDormitoryRegistrationDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DbDormitoryRegistrationDataSet2.xsc">
+      <DependentUpon>DbDormitoryRegistrationDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="DbDormitoryRegistrationDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DbDormitoryRegistrationDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DbDormitoryRegistrationDataSet2.xss">
+      <DependentUpon>DbDormitoryRegistrationDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="DbDormitoryRegistrationDataSet3.xsc">
+      <DependentUpon>DbDormitoryRegistrationDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="DbDormitoryRegistrationDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DbDormitoryRegistrationDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DbDormitoryRegistrationDataSet3.xss">
+      <DependentUpon>DbDormitoryRegistrationDataSet3.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
