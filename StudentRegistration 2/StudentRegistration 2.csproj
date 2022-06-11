@@ -67,6 +67,21 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DbDormitoryRegistrationDataSet3.xsd</DependentUpon>
     </Compile>
+    <Compile Include="DbDormitoryRegistrationDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DbDormitoryRegistrationDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DbDormitoryRegistrationDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DbDormitoryRegistrationDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DbDormitoryRegistrationDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DbDormitoryRegistrationDataSet6.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Departments.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -91,6 +106,18 @@
     <Compile Include="formMain.Designer.cs">
       <DependentUpon>formMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="formStudentList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formStudentList.Designer.cs">
+      <DependentUpon>formStudentList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formStudenUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formStudenUpdate.Designer.cs">
+      <DependentUpon>formStudenUpdate.cs</DependentUpon>
+    </Compile>
     <Compile Include="mySqlConnection.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -105,6 +132,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="formMain.resx">
       <DependentUpon>formMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formStudentList.resx">
+      <DependentUpon>formStudentList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formStudenUpdate.resx">
+      <DependentUpon>formStudenUpdate.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -158,6 +191,39 @@
     </None>
     <None Include="DbDormitoryRegistrationDataSet3.xss">
       <DependentUpon>DbDormitoryRegistrationDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="DbDormitoryRegistrationDataSet4.xsc">
+      <DependentUpon>DbDormitoryRegistrationDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="DbDormitoryRegistrationDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DbDormitoryRegistrationDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DbDormitoryRegistrationDataSet4.xss">
+      <DependentUpon>DbDormitoryRegistrationDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="DbDormitoryRegistrationDataSet5.xsc">
+      <DependentUpon>DbDormitoryRegistrationDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="DbDormitoryRegistrationDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DbDormitoryRegistrationDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DbDormitoryRegistrationDataSet5.xss">
+      <DependentUpon>DbDormitoryRegistrationDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="DbDormitoryRegistrationDataSet6.xsc">
+      <DependentUpon>DbDormitoryRegistrationDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="DbDormitoryRegistrationDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DbDormitoryRegistrationDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DbDormitoryRegistrationDataSet6.xss">
+      <DependentUpon>DbDormitoryRegistrationDataSet6.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
