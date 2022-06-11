@@ -36,25 +36,34 @@ namespace StudentRegistration_2
             this.dbDormitoryRegistrationDataSet5 = new StudentRegistration_2.DbDormitoryRegistrationDataSet5();
             this.tblStudentBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.tblStudentTableAdapter1 = new StudentRegistration_2.DbDormitoryRegistrationDataSet5TableAdapters.TblStudentTableAdapter();
+            this.tblStudentBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.dbDormitoryRegistrationDataSet6 = new StudentRegistration_2.DbDormitoryRegistrationDataSet6();
+            this.tblStudentTableAdapter2 = new StudentRegistration_2.DbDormitoryRegistrationDataSet6TableAdapters.TblStudentTableAdapter();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dbDormitoryRegistrationDataSet7 = new StudentRegistration_2.DbDormitoryRegistrationDataSet7();
+            this.tblStudentBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
+            this.tblStudentTableAdapter3 = new StudentRegistration_2.DbDormitoryRegistrationDataSet7TableAdapters.TblStudentTableAdapter();
             this.studentIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.studentNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.studentSurnameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.studentRoomNoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.studentNationalNumberDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.studentPhoneDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.studentBirthDayDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.studentDepartmentDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.studentMailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tblStudentBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
-            this.dbDormitoryRegistrationDataSet6 = new StudentRegistration_2.DbDormitoryRegistrationDataSet6();
-            this.tblStudentTableAdapter2 = new StudentRegistration_2.DbDormitoryRegistrationDataSet6TableAdapters.TblStudentTableAdapter();
+            this.studentParentNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.studentParentPhoneDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.studentParentAdressDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dbDormitoryRegistrationDataSet4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblStudentBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dbDormitoryRegistrationDataSet5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblStudentBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblStudentBindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dbDormitoryRegistrationDataSet6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dbDormitoryRegistrationDataSet7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblStudentBindingSource3)).BeginInit();
             this.SuspendLayout();
             // 
             // dbDormitoryRegistrationDataSet4
@@ -85,6 +94,20 @@ namespace StudentRegistration_2
             // 
             this.tblStudentTableAdapter1.ClearBeforeFill = true;
             // 
+            // tblStudentBindingSource2
+            // 
+            this.tblStudentBindingSource2.DataMember = "TblStudent";
+            this.tblStudentBindingSource2.DataSource = this.dbDormitoryRegistrationDataSet6;
+            // 
+            // dbDormitoryRegistrationDataSet6
+            // 
+            this.dbDormitoryRegistrationDataSet6.DataSetName = "DbDormitoryRegistrationDataSet6";
+            this.dbDormitoryRegistrationDataSet6.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // tblStudentTableAdapter2
+            // 
+            this.tblStudentTableAdapter2.ClearBeforeFill = true;
+            // 
             // dataGridView1
             // 
             this.dataGridView1.AutoGenerateColumns = false;
@@ -96,16 +119,34 @@ namespace StudentRegistration_2
             this.studentRoomNoDataGridViewTextBoxColumn,
             this.studentNationalNumberDataGridViewTextBoxColumn,
             this.studentPhoneDataGridViewTextBoxColumn,
+            this.studentBirthDayDataGridViewTextBoxColumn,
             this.studentDepartmentDataGridViewTextBoxColumn,
-            this.studentMailDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.tblStudentBindingSource2;
-            this.dataGridView1.Location = new System.Drawing.Point(0, -1);
+            this.studentMailDataGridViewTextBoxColumn,
+            this.studentParentNameDataGridViewTextBoxColumn,
+            this.studentParentPhoneDataGridViewTextBoxColumn,
+            this.studentParentAdressDataGridViewTextBoxColumn});
+            this.dataGridView1.DataSource = this.tblStudentBindingSource3;
+            this.dataGridView1.Location = new System.Drawing.Point(-1, -2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(1287, 504);
+            this.dataGridView1.Size = new System.Drawing.Size(1493, 509);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
+            // 
+            // dbDormitoryRegistrationDataSet7
+            // 
+            this.dbDormitoryRegistrationDataSet7.DataSetName = "DbDormitoryRegistrationDataSet7";
+            this.dbDormitoryRegistrationDataSet7.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // tblStudentBindingSource3
+            // 
+            this.tblStudentBindingSource3.DataMember = "TblStudent";
+            this.tblStudentBindingSource3.DataSource = this.dbDormitoryRegistrationDataSet7;
+            // 
+            // tblStudentTableAdapter3
+            // 
+            this.tblStudentTableAdapter3.ClearBeforeFill = true;
             // 
             // studentIDDataGridViewTextBoxColumn
             // 
@@ -156,6 +197,14 @@ namespace StudentRegistration_2
             this.studentPhoneDataGridViewTextBoxColumn.Name = "studentPhoneDataGridViewTextBoxColumn";
             this.studentPhoneDataGridViewTextBoxColumn.Width = 150;
             // 
+            // studentBirthDayDataGridViewTextBoxColumn
+            // 
+            this.studentBirthDayDataGridViewTextBoxColumn.DataPropertyName = "StudentBirthDay";
+            this.studentBirthDayDataGridViewTextBoxColumn.HeaderText = "StudentBirthDay";
+            this.studentBirthDayDataGridViewTextBoxColumn.MinimumWidth = 8;
+            this.studentBirthDayDataGridViewTextBoxColumn.Name = "studentBirthDayDataGridViewTextBoxColumn";
+            this.studentBirthDayDataGridViewTextBoxColumn.Width = 150;
+            // 
             // studentDepartmentDataGridViewTextBoxColumn
             // 
             this.studentDepartmentDataGridViewTextBoxColumn.DataPropertyName = "StudentDepartment";
@@ -172,25 +221,36 @@ namespace StudentRegistration_2
             this.studentMailDataGridViewTextBoxColumn.Name = "studentMailDataGridViewTextBoxColumn";
             this.studentMailDataGridViewTextBoxColumn.Width = 150;
             // 
-            // tblStudentBindingSource2
+            // studentParentNameDataGridViewTextBoxColumn
             // 
-            this.tblStudentBindingSource2.DataMember = "TblStudent";
-            this.tblStudentBindingSource2.DataSource = this.dbDormitoryRegistrationDataSet6;
+            this.studentParentNameDataGridViewTextBoxColumn.DataPropertyName = "StudentParentName";
+            this.studentParentNameDataGridViewTextBoxColumn.HeaderText = "StudentParentName";
+            this.studentParentNameDataGridViewTextBoxColumn.MinimumWidth = 8;
+            this.studentParentNameDataGridViewTextBoxColumn.Name = "studentParentNameDataGridViewTextBoxColumn";
+            this.studentParentNameDataGridViewTextBoxColumn.Width = 150;
             // 
-            // dbDormitoryRegistrationDataSet6
+            // studentParentPhoneDataGridViewTextBoxColumn
             // 
-            this.dbDormitoryRegistrationDataSet6.DataSetName = "DbDormitoryRegistrationDataSet6";
-            this.dbDormitoryRegistrationDataSet6.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.studentParentPhoneDataGridViewTextBoxColumn.DataPropertyName = "StudentParentPhone";
+            this.studentParentPhoneDataGridViewTextBoxColumn.HeaderText = "StudentParentPhone";
+            this.studentParentPhoneDataGridViewTextBoxColumn.MinimumWidth = 8;
+            this.studentParentPhoneDataGridViewTextBoxColumn.Name = "studentParentPhoneDataGridViewTextBoxColumn";
+            this.studentParentPhoneDataGridViewTextBoxColumn.Width = 150;
             // 
-            // tblStudentTableAdapter2
+            // studentParentAdressDataGridViewTextBoxColumn
             // 
-            this.tblStudentTableAdapter2.ClearBeforeFill = true;
+            this.studentParentAdressDataGridViewTextBoxColumn.DataPropertyName = "StudentParentAdress";
+            this.studentParentAdressDataGridViewTextBoxColumn.HeaderText = "StudentParentAdress";
+            this.studentParentAdressDataGridViewTextBoxColumn.MinimumWidth = 8;
+            this.studentParentAdressDataGridViewTextBoxColumn.Name = "studentParentAdressDataGridViewTextBoxColumn";
+            this.studentParentAdressDataGridViewTextBoxColumn.Width = 150;
             // 
             // formStudentList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1285, 504);
+            this.AutoSize = true;
+            this.ClientSize = new System.Drawing.Size(1491, 504);
             this.Controls.Add(this.dataGridView1);
             this.Name = "formStudentList";
             this.Text = "formStudentList";
@@ -199,9 +259,11 @@ namespace StudentRegistration_2
             ((System.ComponentModel.ISupportInitialize)(this.tblStudentBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dbDormitoryRegistrationDataSet5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblStudentBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblStudentBindingSource2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dbDormitoryRegistrationDataSet6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dbDormitoryRegistrationDataSet7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblStudentBindingSource3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -213,17 +275,24 @@ namespace StudentRegistration_2
         private DbDormitoryRegistrationDataSet5 dbDormitoryRegistrationDataSet5;
         private System.Windows.Forms.BindingSource tblStudentBindingSource1;
         private DbDormitoryRegistrationDataSet5TableAdapters.TblStudentTableAdapter tblStudentTableAdapter1;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private DbDormitoryRegistrationDataSet6 dbDormitoryRegistrationDataSet6;
         private System.Windows.Forms.BindingSource tblStudentBindingSource2;
         private DbDormitoryRegistrationDataSet6TableAdapters.TblStudentTableAdapter tblStudentTableAdapter2;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private DbDormitoryRegistrationDataSet7 dbDormitoryRegistrationDataSet7;
+        private System.Windows.Forms.BindingSource tblStudentBindingSource3;
+        private DbDormitoryRegistrationDataSet7TableAdapters.TblStudentTableAdapter tblStudentTableAdapter3;
         private System.Windows.Forms.DataGridViewTextBoxColumn studentIDDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn studentNameDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn studentSurnameDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn studentRoomNoDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn studentNationalNumberDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn studentPhoneDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn studentBirthDayDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn studentDepartmentDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn studentMailDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn studentParentNameDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn studentParentPhoneDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn studentParentAdressDataGridViewTextBoxColumn;
     }
 }

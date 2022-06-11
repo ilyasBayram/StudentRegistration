@@ -19,25 +19,49 @@ namespace StudentRegistration_2
 
         private void formStudentList_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'dbDormitoryRegistrationDataSet6.TblStudent' table. You can move, or remove it, as needed.
-            this.tblStudentTableAdapter2.Fill(this.dbDormitoryRegistrationDataSet6.TblStudent);
-            // TODO: This line of code loads data into the 'dbDormitoryRegistrationDataSet5.TblStudent' table. You can move, or remove it, as needed.
-            this.tblStudentTableAdapter1.Fill(this.dbDormitoryRegistrationDataSet5.TblStudent);
-            // TODO: This line of code loads data into the 'dbDormitoryRegistrationDataSet4.TblStudent' table. You can move, or remove it, as needed.
-            this.tblStudentTableAdapter.Fill(this.dbDormitoryRegistrationDataSet4.TblStudent);
+            // TODO: This line of code loads data into the 'dbDormitoryRegistrationDataSet7.TblStudent' table. You can move, or remove it, as needed.
+            this.tblStudentTableAdapter3.Fill(this.dbDormitoryRegistrationDataSet7.TblStudent);
+
 
         }
 
         int choosen;
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            choosen = dataGridView1.SelectedCells[0].RowIndex;
-            formStudenUpdate form = new formStudenUpdate();
-            form.id = dataGridView1.Rows[choosen].Cells[0].Value.ToString();
-            form.name = dataGridView1.Rows[choosen].Cells[1].Value.ToString();
-            form.surname = dataGridView1.Rows[choosen].Cells[2].Value.ToString();
-            form.nationalNumber = dataGridView1.Rows[choosen].Cells[3].Value.ToString();
-            form.Show();
+            //it prevents form opening a second time. if form is open already to check another perso data open one should be closed first.
+            bool isOpen = false;
+           
+            foreach (Form f in Application.OpenForms)
+            {
+                if (f.Text== "formStudenUpdate")
+                {
+                    isOpen = true;
+                    f.BringToFront();
+                    break;
+                }
+            }
+           
+            //When a cell is clicked it brings data from list to  studen update form. 
+            if (isOpen==false)
+            {
+                formStudenUpdate form = new formStudenUpdate();
+                choosen = dataGridView1.SelectedCells[0].RowIndex;
+
+                form.id = dataGridView1.Rows[choosen].Cells[0].Value.ToString();
+                form.name = dataGridView1.Rows[choosen].Cells[1].Value.ToString();
+                form.surname = dataGridView1.Rows[choosen].Cells[2].Value.ToString();
+                form.roomNumber = dataGridView1.Rows[choosen].Cells[3].Value.ToString();
+                form.nationalNumber = dataGridView1.Rows[choosen].Cells[4].Value.ToString();
+                form.phoneNumber = dataGridView1.Rows[choosen].Cells[5].Value.ToString();
+                form.birtDay = dataGridView1.Rows[choosen].Cells[6].Value.ToString();
+                form.departmentName = dataGridView1.Rows[choosen].Cells[7].Value.ToString();
+                form.mail = dataGridView1.Rows[choosen].Cells[8].Value.ToString();
+                form.parentName = dataGridView1.Rows[choosen].Cells[9].Value.ToString();
+                form.parentPhone = dataGridView1.Rows[choosen].Cells[10].Value.ToString();
+                form.parentAdress = dataGridView1.Rows[choosen].Cells[11].Value.ToString();
+                form.Show();
+            }
+            
         }
     }
 }

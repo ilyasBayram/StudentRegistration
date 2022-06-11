@@ -37,11 +37,8 @@ namespace StudentRegistration_2
             this.lblStudentParentSurname = new System.Windows.Forms.Label();
             this.txBoxStudentParentName = new System.Windows.Forms.TextBox();
             this.lblStudentParentName = new System.Windows.Forms.Label();
-            this.cmbBoxStudentRoomNo = new System.Windows.Forms.ComboBox();
-            this.lblStudentRoomNo = new System.Windows.Forms.Label();
             this.lblStudentMail = new System.Windows.Forms.Label();
             this.txBoxStudentMail = new System.Windows.Forms.TextBox();
-            this.cmbBoxStudentDepartment = new System.Windows.Forms.ComboBox();
             this.lblStudentDepartment = new System.Windows.Forms.Label();
             this.lblStudentBirtday = new System.Windows.Forms.Label();
             this.mskdTxBoxStudentBirth = new System.Windows.Forms.MaskedTextBox();
@@ -55,6 +52,9 @@ namespace StudentRegistration_2
             this.lblStudentName = new System.Windows.Forms.Label();
             this.txBoxStudentID = new System.Windows.Forms.TextBox();
             this.lblStudentD = new System.Windows.Forms.Label();
+            this.lblStudentRoomNo = new System.Windows.Forms.Label();
+            this.txBoxRoomNo = new System.Windows.Forms.TextBox();
+            this.txBoxDepartmenName = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // lblSecretStudentID
@@ -83,7 +83,7 @@ namespace StudentRegistration_2
             // 
             this.lblStudentParentAdress.AutoSize = true;
             this.lblStudentParentAdress.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold);
-            this.lblStudentParentAdress.Location = new System.Drawing.Point(18, 576);
+            this.lblStudentParentAdress.Location = new System.Drawing.Point(21, 569);
             this.lblStudentParentAdress.Name = "lblStudentParentAdress";
             this.lblStudentParentAdress.Size = new System.Drawing.Size(160, 30);
             this.lblStudentParentAdress.TabIndex = 68;
@@ -93,7 +93,7 @@ namespace StudentRegistration_2
             // 
             this.rchTxBoxParentAdress.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(196)))), ((int)(((byte)(15)))));
             this.rchTxBoxParentAdress.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.rchTxBoxParentAdress.Location = new System.Drawing.Point(281, 590);
+            this.rchTxBoxParentAdress.Location = new System.Drawing.Point(281, 583);
             this.rchTxBoxParentAdress.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rchTxBoxParentAdress.Name = "rchTxBoxParentAdress";
             this.rchTxBoxParentAdress.Size = new System.Drawing.Size(252, 119);
@@ -104,7 +104,7 @@ namespace StudentRegistration_2
             // 
             this.mskdTxBoxStudentparentPhone.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(196)))), ((int)(((byte)(15)))));
             this.mskdTxBoxStudentparentPhone.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.mskdTxBoxStudentparentPhone.Location = new System.Drawing.Point(281, 532);
+            this.mskdTxBoxStudentparentPhone.Location = new System.Drawing.Point(281, 525);
             this.mskdTxBoxStudentparentPhone.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.mskdTxBoxStudentparentPhone.Mask = "(999) 000-0000";
             this.mskdTxBoxStudentparentPhone.Name = "mskdTxBoxStudentparentPhone";
@@ -115,7 +115,7 @@ namespace StudentRegistration_2
             // 
             this.lblStudentParentSurname.AutoSize = true;
             this.lblStudentParentSurname.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold);
-            this.lblStudentParentSurname.Location = new System.Drawing.Point(18, 531);
+            this.lblStudentParentSurname.Location = new System.Drawing.Point(21, 524);
             this.lblStudentParentSurname.Name = "lblStudentParentSurname";
             this.lblStudentParentSurname.Size = new System.Drawing.Size(246, 30);
             this.lblStudentParentSurname.TabIndex = 67;
@@ -125,7 +125,7 @@ namespace StudentRegistration_2
             // 
             this.txBoxStudentParentName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(196)))), ((int)(((byte)(15)))));
             this.txBoxStudentParentName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txBoxStudentParentName.Location = new System.Drawing.Point(282, 483);
+            this.txBoxStudentParentName.Location = new System.Drawing.Point(282, 476);
             this.txBoxStudentParentName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txBoxStudentParentName.Name = "txBoxStudentParentName";
             this.txBoxStudentParentName.Size = new System.Drawing.Size(253, 30);
@@ -135,38 +135,17 @@ namespace StudentRegistration_2
             // 
             this.lblStudentParentName.AutoSize = true;
             this.lblStudentParentName.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold);
-            this.lblStudentParentName.Location = new System.Drawing.Point(18, 483);
+            this.lblStudentParentName.Location = new System.Drawing.Point(21, 476);
             this.lblStudentParentName.Name = "lblStudentParentName";
             this.lblStudentParentName.Size = new System.Drawing.Size(250, 30);
             this.lblStudentParentName.TabIndex = 66;
             this.lblStudentParentName.Text = "Parent Name/Surname :";
             // 
-            // cmbBoxStudentRoomNo
-            // 
-            this.cmbBoxStudentRoomNo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(196)))), ((int)(((byte)(15)))));
-            this.cmbBoxStudentRoomNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.cmbBoxStudentRoomNo.FormattingEnabled = true;
-            this.cmbBoxStudentRoomNo.Location = new System.Drawing.Point(281, 428);
-            this.cmbBoxStudentRoomNo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.cmbBoxStudentRoomNo.Name = "cmbBoxStudentRoomNo";
-            this.cmbBoxStudentRoomNo.Size = new System.Drawing.Size(253, 33);
-            this.cmbBoxStudentRoomNo.TabIndex = 54;
-            // 
-            // lblStudentRoomNo
-            // 
-            this.lblStudentRoomNo.AutoSize = true;
-            this.lblStudentRoomNo.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold);
-            this.lblStudentRoomNo.Location = new System.Drawing.Point(22, 423);
-            this.lblStudentRoomNo.Name = "lblStudentRoomNo";
-            this.lblStudentRoomNo.Size = new System.Drawing.Size(118, 30);
-            this.lblStudentRoomNo.TabIndex = 65;
-            this.lblStudentRoomNo.Text = "Room No :";
-            // 
             // lblStudentMail
             // 
             this.lblStudentMail.AutoSize = true;
             this.lblStudentMail.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold);
-            this.lblStudentMail.Location = new System.Drawing.Point(22, 372);
+            this.lblStudentMail.Location = new System.Drawing.Point(23, 430);
             this.lblStudentMail.Name = "lblStudentMail";
             this.lblStudentMail.Size = new System.Drawing.Size(67, 30);
             this.lblStudentMail.TabIndex = 64;
@@ -176,28 +155,17 @@ namespace StudentRegistration_2
             // 
             this.txBoxStudentMail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(196)))), ((int)(((byte)(15)))));
             this.txBoxStudentMail.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txBoxStudentMail.Location = new System.Drawing.Point(281, 376);
+            this.txBoxStudentMail.Location = new System.Drawing.Point(282, 434);
             this.txBoxStudentMail.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txBoxStudentMail.Name = "txBoxStudentMail";
             this.txBoxStudentMail.Size = new System.Drawing.Size(253, 30);
             this.txBoxStudentMail.TabIndex = 53;
             // 
-            // cmbBoxStudentDepartment
-            // 
-            this.cmbBoxStudentDepartment.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(196)))), ((int)(((byte)(15)))));
-            this.cmbBoxStudentDepartment.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.cmbBoxStudentDepartment.FormattingEnabled = true;
-            this.cmbBoxStudentDepartment.Location = new System.Drawing.Point(281, 325);
-            this.cmbBoxStudentDepartment.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.cmbBoxStudentDepartment.Name = "cmbBoxStudentDepartment";
-            this.cmbBoxStudentDepartment.Size = new System.Drawing.Size(253, 33);
-            this.cmbBoxStudentDepartment.TabIndex = 52;
-            // 
             // lblStudentDepartment
             // 
             this.lblStudentDepartment.AutoSize = true;
             this.lblStudentDepartment.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold);
-            this.lblStudentDepartment.Location = new System.Drawing.Point(25, 323);
+            this.lblStudentDepartment.Location = new System.Drawing.Point(21, 381);
             this.lblStudentDepartment.Name = "lblStudentDepartment";
             this.lblStudentDepartment.Size = new System.Drawing.Size(145, 30);
             this.lblStudentDepartment.TabIndex = 63;
@@ -207,7 +175,7 @@ namespace StudentRegistration_2
             // 
             this.lblStudentBirtday.AutoSize = true;
             this.lblStudentBirtday.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold);
-            this.lblStudentBirtday.Location = new System.Drawing.Point(25, 275);
+            this.lblStudentBirtday.Location = new System.Drawing.Point(21, 333);
             this.lblStudentBirtday.Name = "lblStudentBirtday";
             this.lblStudentBirtday.Size = new System.Drawing.Size(108, 30);
             this.lblStudentBirtday.TabIndex = 62;
@@ -217,7 +185,7 @@ namespace StudentRegistration_2
             // 
             this.mskdTxBoxStudentBirth.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(196)))), ((int)(((byte)(15)))));
             this.mskdTxBoxStudentBirth.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.mskdTxBoxStudentBirth.Location = new System.Drawing.Point(283, 275);
+            this.mskdTxBoxStudentBirth.Location = new System.Drawing.Point(284, 333);
             this.mskdTxBoxStudentBirth.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.mskdTxBoxStudentBirth.Mask = "00/00/0000";
             this.mskdTxBoxStudentBirth.Name = "mskdTxBoxStudentBirth";
@@ -229,7 +197,7 @@ namespace StudentRegistration_2
             // 
             this.lblStudentPhone.AutoSize = true;
             this.lblStudentPhone.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold);
-            this.lblStudentPhone.Location = new System.Drawing.Point(22, 223);
+            this.lblStudentPhone.Location = new System.Drawing.Point(21, 281);
             this.lblStudentPhone.Name = "lblStudentPhone";
             this.lblStudentPhone.Size = new System.Drawing.Size(176, 30);
             this.lblStudentPhone.TabIndex = 61;
@@ -239,7 +207,7 @@ namespace StudentRegistration_2
             // 
             this.mskdTxBoxStudentPhone.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(196)))), ((int)(((byte)(15)))));
             this.mskdTxBoxStudentPhone.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.mskdTxBoxStudentPhone.Location = new System.Drawing.Point(283, 224);
+            this.mskdTxBoxStudentPhone.Location = new System.Drawing.Point(284, 282);
             this.mskdTxBoxStudentPhone.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.mskdTxBoxStudentPhone.Mask = "(999) 000-0000";
             this.mskdTxBoxStudentPhone.Name = "mskdTxBoxStudentPhone";
@@ -250,7 +218,7 @@ namespace StudentRegistration_2
             // 
             this.mskdTxBoxStudentNatioanlNumber.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(196)))), ((int)(((byte)(15)))));
             this.mskdTxBoxStudentNatioanlNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.mskdTxBoxStudentNatioanlNumber.Location = new System.Drawing.Point(281, 175);
+            this.mskdTxBoxStudentNatioanlNumber.Location = new System.Drawing.Point(282, 233);
             this.mskdTxBoxStudentNatioanlNumber.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.mskdTxBoxStudentNatioanlNumber.Mask = "00000000000";
             this.mskdTxBoxStudentNatioanlNumber.Name = "mskdTxBoxStudentNatioanlNumber";
@@ -262,7 +230,7 @@ namespace StudentRegistration_2
             // 
             this.lblStudentNationalNumber.AutoSize = true;
             this.lblStudentNationalNumber.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold);
-            this.lblStudentNationalNumber.Location = new System.Drawing.Point(21, 170);
+            this.lblStudentNationalNumber.Location = new System.Drawing.Point(21, 228);
             this.lblStudentNationalNumber.Name = "lblStudentNationalNumber";
             this.lblStudentNationalNumber.Size = new System.Drawing.Size(197, 30);
             this.lblStudentNationalNumber.TabIndex = 60;
@@ -282,7 +250,7 @@ namespace StudentRegistration_2
             // 
             this.lblStudentSurname.AutoSize = true;
             this.lblStudentSurname.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold);
-            this.lblStudentSurname.Location = new System.Drawing.Point(22, 123);
+            this.lblStudentSurname.Location = new System.Drawing.Point(21, 123);
             this.lblStudentSurname.Name = "lblStudentSurname";
             this.lblStudentSurname.Size = new System.Drawing.Size(196, 30);
             this.lblStudentSurname.TabIndex = 59;
@@ -302,7 +270,7 @@ namespace StudentRegistration_2
             // 
             this.lblStudentName.AutoSize = true;
             this.lblStudentName.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold);
-            this.lblStudentName.Location = new System.Drawing.Point(22, 74);
+            this.lblStudentName.Location = new System.Drawing.Point(21, 74);
             this.lblStudentName.Name = "lblStudentName";
             this.lblStudentName.Size = new System.Drawing.Size(167, 30);
             this.lblStudentName.TabIndex = 58;
@@ -328,12 +296,47 @@ namespace StudentRegistration_2
             this.lblStudentD.TabIndex = 72;
             this.lblStudentD.Text = "Student ID :";
             // 
+            // lblStudentRoomNo
+            // 
+            this.lblStudentRoomNo.AutoSize = true;
+            this.lblStudentRoomNo.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold);
+            this.lblStudentRoomNo.Location = new System.Drawing.Point(21, 177);
+            this.lblStudentRoomNo.Name = "lblStudentRoomNo";
+            this.lblStudentRoomNo.Size = new System.Drawing.Size(118, 30);
+            this.lblStudentRoomNo.TabIndex = 74;
+            this.lblStudentRoomNo.Text = "Room No :";
+            // 
+            // txBoxRoomNo
+            // 
+            this.txBoxRoomNo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(196)))), ((int)(((byte)(15)))));
+            this.txBoxRoomNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txBoxRoomNo.Location = new System.Drawing.Point(281, 178);
+            this.txBoxRoomNo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txBoxRoomNo.Name = "txBoxRoomNo";
+            this.txBoxRoomNo.Size = new System.Drawing.Size(253, 30);
+            this.txBoxRoomNo.TabIndex = 75;
+            // 
+            // txBoxDepartmenName
+            // 
+            this.txBoxDepartmenName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(196)))), ((int)(((byte)(15)))));
+            this.txBoxDepartmenName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txBoxDepartmenName.Location = new System.Drawing.Point(284, 382);
+            this.txBoxDepartmenName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txBoxDepartmenName.Name = "txBoxDepartmenName";
+            this.txBoxDepartmenName.Size = new System.Drawing.Size(253, 30);
+            this.txBoxDepartmenName.TabIndex = 76;
+            // 
             // formStudenUpdate
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(170)))), ((int)(((byte)(242)))));
-            this.ClientSize = new System.Drawing.Size(664, 751);
+            this.ClientSize = new System.Drawing.Size(649, 806);
+            this.Controls.Add(this.txBoxDepartmenName);
+            this.Controls.Add(this.txBoxRoomNo);
+            this.Controls.Add(this.lblStudentRoomNo);
             this.Controls.Add(this.lblStudentD);
             this.Controls.Add(this.txBoxStudentID);
             this.Controls.Add(this.lblSecretStudentID);
@@ -344,11 +347,8 @@ namespace StudentRegistration_2
             this.Controls.Add(this.lblStudentParentSurname);
             this.Controls.Add(this.txBoxStudentParentName);
             this.Controls.Add(this.lblStudentParentName);
-            this.Controls.Add(this.cmbBoxStudentRoomNo);
-            this.Controls.Add(this.lblStudentRoomNo);
             this.Controls.Add(this.lblStudentMail);
             this.Controls.Add(this.txBoxStudentMail);
-            this.Controls.Add(this.cmbBoxStudentDepartment);
             this.Controls.Add(this.lblStudentDepartment);
             this.Controls.Add(this.lblStudentBirtday);
             this.Controls.Add(this.mskdTxBoxStudentBirth);
@@ -360,6 +360,8 @@ namespace StudentRegistration_2
             this.Controls.Add(this.lblStudentSurname);
             this.Controls.Add(this.txBoxStudentName);
             this.Controls.Add(this.lblStudentName);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "formStudenUpdate";
             this.Text = "formStudenUpdate";
             this.Load += new System.EventHandler(this.formStudenUpdate_Load);
@@ -377,11 +379,8 @@ namespace StudentRegistration_2
         private System.Windows.Forms.Label lblStudentParentSurname;
         private System.Windows.Forms.TextBox txBoxStudentParentName;
         private System.Windows.Forms.Label lblStudentParentName;
-        private System.Windows.Forms.ComboBox cmbBoxStudentRoomNo;
-        private System.Windows.Forms.Label lblStudentRoomNo;
         private System.Windows.Forms.Label lblStudentMail;
         private System.Windows.Forms.TextBox txBoxStudentMail;
-        private System.Windows.Forms.ComboBox cmbBoxStudentDepartment;
         private System.Windows.Forms.Label lblStudentDepartment;
         private System.Windows.Forms.Label lblStudentBirtday;
         private System.Windows.Forms.MaskedTextBox mskdTxBoxStudentBirth;
@@ -395,5 +394,8 @@ namespace StudentRegistration_2
         private System.Windows.Forms.Label lblStudentName;
         private System.Windows.Forms.TextBox txBoxStudentID;
         private System.Windows.Forms.Label lblStudentD;
+        private System.Windows.Forms.Label lblStudentRoomNo;
+        private System.Windows.Forms.TextBox txBoxRoomNo;
+        private System.Windows.Forms.TextBox txBoxDepartmenName;
     }
 }
