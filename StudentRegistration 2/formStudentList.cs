@@ -27,5 +27,17 @@ namespace StudentRegistration_2
             this.tblStudentTableAdapter.Fill(this.dbDormitoryRegistrationDataSet4.TblStudent);
 
         }
+
+        int choosen;
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            choosen = dataGridView1.SelectedCells[0].RowIndex;
+            formStudenUpdate form = new formStudenUpdate();
+            form.id = dataGridView1.Rows[choosen].Cells[0].Value.ToString();
+            form.name = dataGridView1.Rows[choosen].Cells[1].Value.ToString();
+            form.surname = dataGridView1.Rows[choosen].Cells[2].Value.ToString();
+            form.nationalNumber = dataGridView1.Rows[choosen].Cells[3].Value.ToString();
+            form.Show();
+        }
     }
 }

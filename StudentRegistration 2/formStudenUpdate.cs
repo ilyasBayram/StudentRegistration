@@ -16,5 +16,15 @@ namespace StudentRegistration_2
         {
             InitializeComponent();
         }
+
+        public string id, name, surname, nationalNumber;
+        private void formStudenUpdate_Load(object sender, EventArgs e)
+        {
+            txBoxStudentID.Text = id;
+            txBoxStudentName.Text = name;
+            txBoxStudentSurname.Text = surname;
+            mskdTxBoxStudentNatioanlNumber.Text = nationalNumber;
+
+        }
     }
 }
