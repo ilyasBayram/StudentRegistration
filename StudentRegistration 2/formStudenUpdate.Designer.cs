@@ -30,7 +30,7 @@ namespace StudentRegistration_2
         private void InitializeComponent()
         {
             this.lblSecretStudentID = new System.Windows.Forms.Label();
-            this.btnSave = new System.Windows.Forms.Button();
+            this.btnUpdate = new System.Windows.Forms.Button();
             this.lblStudentParentAdress = new System.Windows.Forms.Label();
             this.rchTxBoxParentAdress = new System.Windows.Forms.RichTextBox();
             this.mskdTxBoxStudentparentPhone = new System.Windows.Forms.MaskedTextBox();
@@ -68,16 +68,17 @@ namespace StudentRegistration_2
             this.lblSecretStudentID.Text = "label1";
             this.lblSecretStudentID.Visible = false;
             // 
-            // btnSave
+            // btnUpdate
             // 
-            this.btnSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(150)))), ((int)(((byte)(68)))));
-            this.btnSave.Location = new System.Drawing.Point(39, 651);
-            this.btnSave.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(131, 58);
-            this.btnSave.TabIndex = 69;
-            this.btnSave.Text = "Save";
-            this.btnSave.UseVisualStyleBackColor = false;
+            this.btnUpdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(150)))), ((int)(((byte)(68)))));
+            this.btnUpdate.Location = new System.Drawing.Point(39, 651);
+            this.btnUpdate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(131, 58);
+            this.btnUpdate.TabIndex = 13;
+            this.btnUpdate.Text = "Update";
+            this.btnUpdate.UseVisualStyleBackColor = false;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // lblStudentParentAdress
             // 
@@ -97,7 +98,7 @@ namespace StudentRegistration_2
             this.rchTxBoxParentAdress.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rchTxBoxParentAdress.Name = "rchTxBoxParentAdress";
             this.rchTxBoxParentAdress.Size = new System.Drawing.Size(252, 119);
-            this.rchTxBoxParentAdress.TabIndex = 57;
+            this.rchTxBoxParentAdress.TabIndex = 12;
             this.rchTxBoxParentAdress.Text = "";
             // 
             // mskdTxBoxStudentparentPhone
@@ -109,7 +110,7 @@ namespace StudentRegistration_2
             this.mskdTxBoxStudentparentPhone.Mask = "(999) 000-0000";
             this.mskdTxBoxStudentparentPhone.Name = "mskdTxBoxStudentparentPhone";
             this.mskdTxBoxStudentparentPhone.Size = new System.Drawing.Size(253, 30);
-            this.mskdTxBoxStudentparentPhone.TabIndex = 56;
+            this.mskdTxBoxStudentparentPhone.TabIndex = 11;
             // 
             // lblStudentParentSurname
             // 
@@ -129,7 +130,7 @@ namespace StudentRegistration_2
             this.txBoxStudentParentName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txBoxStudentParentName.Name = "txBoxStudentParentName";
             this.txBoxStudentParentName.Size = new System.Drawing.Size(253, 30);
-            this.txBoxStudentParentName.TabIndex = 55;
+            this.txBoxStudentParentName.TabIndex = 10;
             // 
             // lblStudentParentName
             // 
@@ -159,7 +160,7 @@ namespace StudentRegistration_2
             this.txBoxStudentMail.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txBoxStudentMail.Name = "txBoxStudentMail";
             this.txBoxStudentMail.Size = new System.Drawing.Size(253, 30);
-            this.txBoxStudentMail.TabIndex = 53;
+            this.txBoxStudentMail.TabIndex = 9;
             // 
             // lblStudentDepartment
             // 
@@ -190,7 +191,7 @@ namespace StudentRegistration_2
             this.mskdTxBoxStudentBirth.Mask = "00/00/0000";
             this.mskdTxBoxStudentBirth.Name = "mskdTxBoxStudentBirth";
             this.mskdTxBoxStudentBirth.Size = new System.Drawing.Size(253, 30);
-            this.mskdTxBoxStudentBirth.TabIndex = 51;
+            this.mskdTxBoxStudentBirth.TabIndex = 7;
             this.mskdTxBoxStudentBirth.ValidatingType = typeof(System.DateTime);
             // 
             // lblStudentPhone
@@ -212,7 +213,7 @@ namespace StudentRegistration_2
             this.mskdTxBoxStudentPhone.Mask = "(999) 000-0000";
             this.mskdTxBoxStudentPhone.Name = "mskdTxBoxStudentPhone";
             this.mskdTxBoxStudentPhone.Size = new System.Drawing.Size(253, 30);
-            this.mskdTxBoxStudentPhone.TabIndex = 50;
+            this.mskdTxBoxStudentPhone.TabIndex = 6;
             // 
             // mskdTxBoxStudentNatioanlNumber
             // 
@@ -223,7 +224,7 @@ namespace StudentRegistration_2
             this.mskdTxBoxStudentNatioanlNumber.Mask = "00000000000";
             this.mskdTxBoxStudentNatioanlNumber.Name = "mskdTxBoxStudentNatioanlNumber";
             this.mskdTxBoxStudentNatioanlNumber.Size = new System.Drawing.Size(253, 30);
-            this.mskdTxBoxStudentNatioanlNumber.TabIndex = 49;
+            this.mskdTxBoxStudentNatioanlNumber.TabIndex = 5;
             this.mskdTxBoxStudentNatioanlNumber.ValidatingType = typeof(int);
             // 
             // lblStudentNationalNumber
@@ -244,7 +245,7 @@ namespace StudentRegistration_2
             this.txBoxStudentSurname.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txBoxStudentSurname.Name = "txBoxStudentSurname";
             this.txBoxStudentSurname.Size = new System.Drawing.Size(253, 30);
-            this.txBoxStudentSurname.TabIndex = 48;
+            this.txBoxStudentSurname.TabIndex = 3;
             // 
             // lblStudentSurname
             // 
@@ -264,7 +265,7 @@ namespace StudentRegistration_2
             this.txBoxStudentName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txBoxStudentName.Name = "txBoxStudentName";
             this.txBoxStudentName.Size = new System.Drawing.Size(253, 30);
-            this.txBoxStudentName.TabIndex = 47;
+            this.txBoxStudentName.TabIndex = 2;
             // 
             // lblStudentName
             // 
@@ -284,7 +285,7 @@ namespace StudentRegistration_2
             this.txBoxStudentID.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txBoxStudentID.Name = "txBoxStudentID";
             this.txBoxStudentID.Size = new System.Drawing.Size(253, 30);
-            this.txBoxStudentID.TabIndex = 71;
+            this.txBoxStudentID.TabIndex = 1;
             // 
             // lblStudentD
             // 
@@ -314,7 +315,7 @@ namespace StudentRegistration_2
             this.txBoxRoomNo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txBoxRoomNo.Name = "txBoxRoomNo";
             this.txBoxRoomNo.Size = new System.Drawing.Size(253, 30);
-            this.txBoxRoomNo.TabIndex = 75;
+            this.txBoxRoomNo.TabIndex = 4;
             // 
             // txBoxDepartmenName
             // 
@@ -324,10 +325,11 @@ namespace StudentRegistration_2
             this.txBoxDepartmenName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txBoxDepartmenName.Name = "txBoxDepartmenName";
             this.txBoxDepartmenName.Size = new System.Drawing.Size(253, 30);
-            this.txBoxDepartmenName.TabIndex = 76;
+            this.txBoxDepartmenName.TabIndex = 8;
             // 
             // formStudenUpdate
             // 
+            this.AcceptButton = this.btnUpdate;
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
@@ -340,7 +342,7 @@ namespace StudentRegistration_2
             this.Controls.Add(this.lblStudentD);
             this.Controls.Add(this.txBoxStudentID);
             this.Controls.Add(this.lblSecretStudentID);
-            this.Controls.Add(this.btnSave);
+            this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.lblStudentParentAdress);
             this.Controls.Add(this.rchTxBoxParentAdress);
             this.Controls.Add(this.mskdTxBoxStudentparentPhone);
@@ -363,6 +365,7 @@ namespace StudentRegistration_2
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "formStudenUpdate";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "formStudenUpdate";
             this.Load += new System.EventHandler(this.formStudenUpdate_Load);
             this.ResumeLayout(false);
@@ -372,7 +375,7 @@ namespace StudentRegistration_2
 
         #endregion
         private System.Windows.Forms.Label lblSecretStudentID;
-        private System.Windows.Forms.Button btnSave;
+        private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Label lblStudentParentAdress;
         private System.Windows.Forms.RichTextBox rchTxBoxParentAdress;
         private System.Windows.Forms.MaskedTextBox mskdTxBoxStudentparentPhone;
