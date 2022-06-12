@@ -280,6 +280,7 @@ namespace StudentRegistration_2
             // txBoxStudentID
             // 
             this.txBoxStudentID.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(196)))), ((int)(((byte)(15)))));
+            this.txBoxStudentID.Enabled = false;
             this.txBoxStudentID.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txBoxStudentID.Location = new System.Drawing.Point(280, 27);
             this.txBoxStudentID.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);

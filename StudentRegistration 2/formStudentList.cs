@@ -17,12 +17,11 @@ namespace StudentRegistration_2
             InitializeComponent();
         }
 
+
+
         private void formStudentList_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'dbDormitoryRegistrationDataSet7.TblStudent' table. You can move, or remove it, as needed.
-            this.tblStudentTableAdapter3.Fill(this.dbDormitoryRegistrationDataSet7.TblStudent);
-
-
+            this.tblStudentTableAdapter.Fill(this.dbDormitoryRegistrationDataSet8.TblStudent);
         }
 
         int choosen;

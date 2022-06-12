@@ -30,19 +30,10 @@ namespace StudentRegistration_2
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.dbDormitoryRegistrationDataSet4 = new StudentRegistration_2.DbDormitoryRegistrationDataSet4();
-            this.tblStudentBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.tblStudentTableAdapter = new StudentRegistration_2.DbDormitoryRegistrationDataSet4TableAdapters.TblStudentTableAdapter();
-            this.dbDormitoryRegistrationDataSet5 = new StudentRegistration_2.DbDormitoryRegistrationDataSet5();
-            this.tblStudentBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.tblStudentTableAdapter1 = new StudentRegistration_2.DbDormitoryRegistrationDataSet5TableAdapters.TblStudentTableAdapter();
-            this.tblStudentBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
-            this.dbDormitoryRegistrationDataSet6 = new StudentRegistration_2.DbDormitoryRegistrationDataSet6();
-            this.tblStudentTableAdapter2 = new StudentRegistration_2.DbDormitoryRegistrationDataSet6TableAdapters.TblStudentTableAdapter();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.dbDormitoryRegistrationDataSet7 = new StudentRegistration_2.DbDormitoryRegistrationDataSet7();
-            this.tblStudentBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
-            this.tblStudentTableAdapter3 = new StudentRegistration_2.DbDormitoryRegistrationDataSet7TableAdapters.TblStudentTableAdapter();
+            this.dbDormitoryRegistrationDataSet8 = new StudentRegistration_2.DbDormitoryRegistrationDataSet8();
+            this.tblStudentBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tblStudentTableAdapter = new StudentRegistration_2.DbDormitoryRegistrationDataSet8TableAdapters.TblStudentTableAdapter();
             this.studentIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.studentNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.studentSurnameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -55,58 +46,10 @@ namespace StudentRegistration_2
             this.studentParentNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.studentParentPhoneDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.studentParentAdressDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.dbDormitoryRegistrationDataSet4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tblStudentBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dbDormitoryRegistrationDataSet5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tblStudentBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tblStudentBindingSource2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dbDormitoryRegistrationDataSet6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dbDormitoryRegistrationDataSet7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tblStudentBindingSource3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dbDormitoryRegistrationDataSet8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblStudentBindingSource)).BeginInit();
             this.SuspendLayout();
-            // 
-            // dbDormitoryRegistrationDataSet4
-            // 
-            this.dbDormitoryRegistrationDataSet4.DataSetName = "DbDormitoryRegistrationDataSet4";
-            this.dbDormitoryRegistrationDataSet4.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // tblStudentBindingSource
-            // 
-            this.tblStudentBindingSource.DataMember = "TblStudent";
-            this.tblStudentBindingSource.DataSource = this.dbDormitoryRegistrationDataSet4;
-            // 
-            // tblStudentTableAdapter
-            // 
-            this.tblStudentTableAdapter.ClearBeforeFill = true;
-            // 
-            // dbDormitoryRegistrationDataSet5
-            // 
-            this.dbDormitoryRegistrationDataSet5.DataSetName = "DbDormitoryRegistrationDataSet5";
-            this.dbDormitoryRegistrationDataSet5.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // tblStudentBindingSource1
-            // 
-            this.tblStudentBindingSource1.DataMember = "TblStudent";
-            this.tblStudentBindingSource1.DataSource = this.dbDormitoryRegistrationDataSet5;
-            // 
-            // tblStudentTableAdapter1
-            // 
-            this.tblStudentTableAdapter1.ClearBeforeFill = true;
-            // 
-            // tblStudentBindingSource2
-            // 
-            this.tblStudentBindingSource2.DataMember = "TblStudent";
-            this.tblStudentBindingSource2.DataSource = this.dbDormitoryRegistrationDataSet6;
-            // 
-            // dbDormitoryRegistrationDataSet6
-            // 
-            this.dbDormitoryRegistrationDataSet6.DataSetName = "DbDormitoryRegistrationDataSet6";
-            this.dbDormitoryRegistrationDataSet6.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // tblStudentTableAdapter2
-            // 
-            this.tblStudentTableAdapter2.ClearBeforeFill = true;
             // 
             // dataGridView1
             // 
@@ -125,28 +68,28 @@ namespace StudentRegistration_2
             this.studentParentNameDataGridViewTextBoxColumn,
             this.studentParentPhoneDataGridViewTextBoxColumn,
             this.studentParentAdressDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.tblStudentBindingSource3;
-            this.dataGridView1.Location = new System.Drawing.Point(-1, -2);
+            this.dataGridView1.DataSource = this.tblStudentBindingSource;
+            this.dataGridView1.Location = new System.Drawing.Point(-1, -3);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(1493, 509);
+            this.dataGridView1.Size = new System.Drawing.Size(1491, 514);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
-            // dbDormitoryRegistrationDataSet7
+            // dbDormitoryRegistrationDataSet8
             // 
-            this.dbDormitoryRegistrationDataSet7.DataSetName = "DbDormitoryRegistrationDataSet7";
-            this.dbDormitoryRegistrationDataSet7.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.dbDormitoryRegistrationDataSet8.DataSetName = "DbDormitoryRegistrationDataSet8";
+            this.dbDormitoryRegistrationDataSet8.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // tblStudentBindingSource3
+            // tblStudentBindingSource
             // 
-            this.tblStudentBindingSource3.DataMember = "TblStudent";
-            this.tblStudentBindingSource3.DataSource = this.dbDormitoryRegistrationDataSet7;
+            this.tblStudentBindingSource.DataMember = "TblStudent";
+            this.tblStudentBindingSource.DataSource = this.dbDormitoryRegistrationDataSet8;
             // 
-            // tblStudentTableAdapter3
+            // tblStudentTableAdapter
             // 
-            this.tblStudentTableAdapter3.ClearBeforeFill = true;
+            this.tblStudentTableAdapter.ClearBeforeFill = true;
             // 
             // studentIDDataGridViewTextBoxColumn
             // 
@@ -155,7 +98,7 @@ namespace StudentRegistration_2
             this.studentIDDataGridViewTextBoxColumn.MinimumWidth = 8;
             this.studentIDDataGridViewTextBoxColumn.Name = "studentIDDataGridViewTextBoxColumn";
             this.studentIDDataGridViewTextBoxColumn.ReadOnly = true;
-            this.studentIDDataGridViewTextBoxColumn.Width = 150;
+            this.studentIDDataGridViewTextBoxColumn.Width = 80;
             // 
             // studentNameDataGridViewTextBoxColumn
             // 
@@ -255,33 +198,19 @@ namespace StudentRegistration_2
             this.Name = "formStudentList";
             this.Text = "formStudentList";
             this.Load += new System.EventHandler(this.formStudentList_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dbDormitoryRegistrationDataSet4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tblStudentBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dbDormitoryRegistrationDataSet5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tblStudentBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tblStudentBindingSource2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dbDormitoryRegistrationDataSet6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dbDormitoryRegistrationDataSet7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tblStudentBindingSource3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dbDormitoryRegistrationDataSet8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblStudentBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private DbDormitoryRegistrationDataSet4 dbDormitoryRegistrationDataSet4;
-        private System.Windows.Forms.BindingSource tblStudentBindingSource;
-        private DbDormitoryRegistrationDataSet4TableAdapters.TblStudentTableAdapter tblStudentTableAdapter;
-        private DbDormitoryRegistrationDataSet5 dbDormitoryRegistrationDataSet5;
-        private System.Windows.Forms.BindingSource tblStudentBindingSource1;
-        private DbDormitoryRegistrationDataSet5TableAdapters.TblStudentTableAdapter tblStudentTableAdapter1;
-        private DbDormitoryRegistrationDataSet6 dbDormitoryRegistrationDataSet6;
-        private System.Windows.Forms.BindingSource tblStudentBindingSource2;
-        private DbDormitoryRegistrationDataSet6TableAdapters.TblStudentTableAdapter tblStudentTableAdapter2;
+
         private System.Windows.Forms.DataGridView dataGridView1;
-        private DbDormitoryRegistrationDataSet7 dbDormitoryRegistrationDataSet7;
-        private System.Windows.Forms.BindingSource tblStudentBindingSource3;
-        private DbDormitoryRegistrationDataSet7TableAdapters.TblStudentTableAdapter tblStudentTableAdapter3;
+        private DbDormitoryRegistrationDataSet8 dbDormitoryRegistrationDataSet8;
+        private System.Windows.Forms.BindingSource tblStudentBindingSource;
+        private DbDormitoryRegistrationDataSet8TableAdapters.TblStudentTableAdapter tblStudentTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn studentIDDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn studentNameDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn studentSurnameDataGridViewTextBoxColumn;

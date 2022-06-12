@@ -87,6 +87,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DbDormitoryRegistrationDataSet7.xsd</DependentUpon>
     </Compile>
+    <Compile Include="DbDormitoryRegistrationDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DbDormitoryRegistrationDataSet8.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Departments.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -240,6 +245,17 @@
     </None>
     <None Include="DbDormitoryRegistrationDataSet7.xss">
       <DependentUpon>DbDormitoryRegistrationDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="DbDormitoryRegistrationDataSet8.xsc">
+      <DependentUpon>DbDormitoryRegistrationDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="DbDormitoryRegistrationDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DbDormitoryRegistrationDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DbDormitoryRegistrationDataSet8.xss">
+      <DependentUpon>DbDormitoryRegistrationDataSet8.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
