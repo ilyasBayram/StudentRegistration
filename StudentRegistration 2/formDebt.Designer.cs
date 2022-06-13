@@ -43,9 +43,6 @@ namespace StudentRegistration_2
             this.studentRemainingDebtDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tblDebtBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.dbDormitoryRegistrationDataSet3 = new StudentRegistration_2.DbDormitoryRegistrationDataSet3();
-            this.tblDebtBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dbDormitoryRegistrationDataSet2 = new StudentRegistration_2.DbDormitoryRegistrationDataSet2();
-            this.tblDebtTableAdapter = new StudentRegistration_2.DbDormitoryRegistrationDataSet2TableAdapters.TblDebtTableAdapter();
             this.btnPayment = new System.Windows.Forms.Button();
             this.txBoxStudentSurname = new System.Windows.Forms.TextBox();
             this.lblStudentSurname = new System.Windows.Forms.Label();
@@ -55,8 +52,6 @@ namespace StudentRegistration_2
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblDebtBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dbDormitoryRegistrationDataSet3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tblDebtBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dbDormitoryRegistrationDataSet2)).BeginInit();
             this.SuspendLayout();
             // 
             // lblStudenID
@@ -176,20 +171,6 @@ namespace StudentRegistration_2
             this.dbDormitoryRegistrationDataSet3.DataSetName = "DbDormitoryRegistrationDataSet3";
             this.dbDormitoryRegistrationDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // tblDebtBindingSource
-            // 
-            this.tblDebtBindingSource.DataMember = "TblDebt";
-            this.tblDebtBindingSource.DataSource = this.dbDormitoryRegistrationDataSet2;
-            // 
-            // dbDormitoryRegistrationDataSet2
-            // 
-            this.dbDormitoryRegistrationDataSet2.DataSetName = "DbDormitoryRegistrationDataSet2";
-            this.dbDormitoryRegistrationDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // tblDebtTableAdapter
-            // 
-            this.tblDebtTableAdapter.ClearBeforeFill = true;
-            // 
             // btnPayment
             // 
             this.btnPayment.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(109)))), ((int)(((byte)(224)))));
@@ -271,8 +252,6 @@ namespace StudentRegistration_2
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblDebtBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dbDormitoryRegistrationDataSet3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tblDebtBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dbDormitoryRegistrationDataSet2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -287,9 +266,6 @@ namespace StudentRegistration_2
         private System.Windows.Forms.TextBox txBoxRemain;
         private System.Windows.Forms.Label lblRemain;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private DbDormitoryRegistrationDataSet2 dbDormitoryRegistrationDataSet2;
-        private System.Windows.Forms.BindingSource tblDebtBindingSource;
-        private DbDormitoryRegistrationDataSet2TableAdapters.TblDebtTableAdapter tblDebtTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn studentIDDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn studentNameDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn studentSurnameDataGridViewTextBoxColumn;

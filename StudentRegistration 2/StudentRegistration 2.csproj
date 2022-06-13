@@ -57,35 +57,10 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DbDormitoryRegistrationDataSet1.xsd</DependentUpon>
     </Compile>
-    <Compile Include="DbDormitoryRegistrationDataSet2.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DbDormitoryRegistrationDataSet2.xsd</DependentUpon>
-    </Compile>
     <Compile Include="DbDormitoryRegistrationDataSet3.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DbDormitoryRegistrationDataSet3.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="DbDormitoryRegistrationDataSet4.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DbDormitoryRegistrationDataSet4.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="DbDormitoryRegistrationDataSet5.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DbDormitoryRegistrationDataSet5.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="DbDormitoryRegistrationDataSet6.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DbDormitoryRegistrationDataSet6.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="DbDormitoryRegistrationDataSet7.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DbDormitoryRegistrationDataSet7.xsd</DependentUpon>
     </Compile>
     <Compile Include="DbDormitoryRegistrationDataSet8.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -203,17 +178,6 @@
     <None Include="DbDormitoryRegistrationDataSet1.xss">
       <DependentUpon>DbDormitoryRegistrationDataSet1.xsd</DependentUpon>
     </None>
-    <None Include="DbDormitoryRegistrationDataSet2.xsc">
-      <DependentUpon>DbDormitoryRegistrationDataSet2.xsd</DependentUpon>
-    </None>
-    <None Include="DbDormitoryRegistrationDataSet2.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>DbDormitoryRegistrationDataSet2.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="DbDormitoryRegistrationDataSet2.xss">
-      <DependentUpon>DbDormitoryRegistrationDataSet2.xsd</DependentUpon>
-    </None>
     <None Include="DbDormitoryRegistrationDataSet3.xsc">
       <DependentUpon>DbDormitoryRegistrationDataSet3.xsd</DependentUpon>
     </None>
@@ -224,50 +188,6 @@
     </None>
     <None Include="DbDormitoryRegistrationDataSet3.xss">
       <DependentUpon>DbDormitoryRegistrationDataSet3.xsd</DependentUpon>
-    </None>
-    <None Include="DbDormitoryRegistrationDataSet4.xsc">
-      <DependentUpon>DbDormitoryRegistrationDataSet4.xsd</DependentUpon>
-    </None>
-    <None Include="DbDormitoryRegistrationDataSet4.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>DbDormitoryRegistrationDataSet4.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="DbDormitoryRegistrationDataSet4.xss">
-      <DependentUpon>DbDormitoryRegistrationDataSet4.xsd</DependentUpon>
-    </None>
-    <None Include="DbDormitoryRegistrationDataSet5.xsc">
-      <DependentUpon>DbDormitoryRegistrationDataSet5.xsd</DependentUpon>
-    </None>
-    <None Include="DbDormitoryRegistrationDataSet5.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>DbDormitoryRegistrationDataSet5.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="DbDormitoryRegistrationDataSet5.xss">
-      <DependentUpon>DbDormitoryRegistrationDataSet5.xsd</DependentUpon>
-    </None>
-    <None Include="DbDormitoryRegistrationDataSet6.xsc">
-      <DependentUpon>DbDormitoryRegistrationDataSet6.xsd</DependentUpon>
-    </None>
-    <None Include="DbDormitoryRegistrationDataSet6.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>DbDormitoryRegistrationDataSet6.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="DbDormitoryRegistrationDataSet6.xss">
-      <DependentUpon>DbDormitoryRegistrationDataSet6.xsd</DependentUpon>
-    </None>
-    <None Include="DbDormitoryRegistrationDataSet7.xsc">
-      <DependentUpon>DbDormitoryRegistrationDataSet7.xsd</DependentUpon>
-    </None>
-    <None Include="DbDormitoryRegistrationDataSet7.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>DbDormitoryRegistrationDataSet7.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="DbDormitoryRegistrationDataSet7.xss">
-      <DependentUpon>DbDormitoryRegistrationDataSet7.xsd</DependentUpon>
     </None>
     <None Include="DbDormitoryRegistrationDataSet8.xsc">
       <DependentUpon>DbDormitoryRegistrationDataSet8.xsd</DependentUpon>
