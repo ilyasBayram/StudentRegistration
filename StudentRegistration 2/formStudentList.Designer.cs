@@ -31,9 +31,6 @@ namespace StudentRegistration_2
         {
             this.components = new System.ComponentModel.Container();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.dbDormitoryRegistrationDataSet8 = new StudentRegistration_2.DbDormitoryRegistrationDataSet8();
-            this.tblStudentBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.tblStudentTableAdapter = new StudentRegistration_2.DbDormitoryRegistrationDataSet8TableAdapters.TblStudentTableAdapter();
             this.studentIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.studentNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.studentSurnameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -46,14 +43,25 @@ namespace StudentRegistration_2
             this.studentParentNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.studentParentPhoneDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.studentParentAdressDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tblStudentBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dbDormitoryRegistrationDataSet8 = new StudentRegistration_2.DbDormitoryRegistrationDataSet8();
+            this.tblStudentTableAdapter = new StudentRegistration_2.DbDormitoryRegistrationDataSet8TableAdapters.TblStudentTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dbDormitoryRegistrationDataSet8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblStudentBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dbDormitoryRegistrationDataSet8)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.AllowUserToResizeColumns = false;
+            this.dataGridView1.AllowUserToResizeRows = false;
             this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.SeaShell;
+            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.RaisedHorizontal;
+            this.dataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.studentIDDataGridViewTextBoxColumn,
@@ -69,27 +77,24 @@ namespace StudentRegistration_2
             this.studentParentPhoneDataGridViewTextBoxColumn,
             this.studentParentAdressDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.tblStudentBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(-1, -3);
+            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
+            this.dataGridView1.MultiSelect = false;
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 62;
-            this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(1491, 514);
+            this.dataGridView1.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
+            this.dataGridView1.RowTemplate.DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.dataGridView1.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.SeaShell;
+            this.dataGridView1.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.dataGridView1.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.dataGridView1.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.RoyalBlue;
+            this.dataGridView1.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.White;
+            this.dataGridView1.RowTemplate.Height = 35;
+            this.dataGridView1.RowTemplate.ReadOnly = true;
+            this.dataGridView1.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridView1.Size = new System.Drawing.Size(1491, 504);
             this.dataGridView1.TabIndex = 0;
-            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
-            // 
-            // dbDormitoryRegistrationDataSet8
-            // 
-            this.dbDormitoryRegistrationDataSet8.DataSetName = "DbDormitoryRegistrationDataSet8";
-            this.dbDormitoryRegistrationDataSet8.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // tblStudentBindingSource
-            // 
-            this.tblStudentBindingSource.DataMember = "TblStudent";
-            this.tblStudentBindingSource.DataSource = this.dbDormitoryRegistrationDataSet8;
-            // 
-            // tblStudentTableAdapter
-            // 
-            this.tblStudentTableAdapter.ClearBeforeFill = true;
+            this.dataGridView1.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
             // studentIDDataGridViewTextBoxColumn
             // 
@@ -188,19 +193,35 @@ namespace StudentRegistration_2
             this.studentParentAdressDataGridViewTextBoxColumn.Name = "studentParentAdressDataGridViewTextBoxColumn";
             this.studentParentAdressDataGridViewTextBoxColumn.Width = 150;
             // 
+            // tblStudentBindingSource
+            // 
+            this.tblStudentBindingSource.DataMember = "TblStudent";
+            this.tblStudentBindingSource.DataSource = this.dbDormitoryRegistrationDataSet8;
+            // 
+            // dbDormitoryRegistrationDataSet8
+            // 
+            this.dbDormitoryRegistrationDataSet8.DataSetName = "DbDormitoryRegistrationDataSet8";
+            this.dbDormitoryRegistrationDataSet8.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // tblStudentTableAdapter
+            // 
+            this.tblStudentTableAdapter.ClearBeforeFill = true;
+            // 
             // formStudentList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.AutoSize = true;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(1491, 504);
             this.Controls.Add(this.dataGridView1);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "formStudentList";
             this.Text = "formStudentList";
             this.Load += new System.EventHandler(this.formStudentList_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dbDormitoryRegistrationDataSet8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblStudentBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dbDormitoryRegistrationDataSet8)).EndInit();
             this.ResumeLayout(false);
 
         }
