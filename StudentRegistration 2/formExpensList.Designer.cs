@@ -31,9 +31,6 @@ namespace StudentRegistration_2
         {
             this.components = new System.ComponentModel.Container();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.dbDormitoryRegistrationDataSet9 = new StudentRegistration_2.DbDormitoryRegistrationDataSet9();
-            this.tblExpensesBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.tblExpensesTableAdapter = new StudentRegistration_2.DbDormitoryRegistrationDataSet9TableAdapters.TblExpensesTableAdapter();
             this.expensesIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.electricDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.waterDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -42,9 +39,12 @@ namespace StudentRegistration_2
             this.foodDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.personelDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.otherDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tblExpensesBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dbDormitoryRegistrationDataSet9 = new StudentRegistration_2.DbDormitoryRegistrationDataSet9();
+            this.tblExpensesTableAdapter = new StudentRegistration_2.DbDormitoryRegistrationDataSet9TableAdapters.TblExpensesTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dbDormitoryRegistrationDataSet9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblExpensesBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dbDormitoryRegistrationDataSet9)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -68,20 +68,7 @@ namespace StudentRegistration_2
             this.dataGridView1.RowTemplate.Height = 28;
             this.dataGridView1.Size = new System.Drawing.Size(1349, 450);
             this.dataGridView1.TabIndex = 0;
-            // 
-            // dbDormitoryRegistrationDataSet9
-            // 
-            this.dbDormitoryRegistrationDataSet9.DataSetName = "DbDormitoryRegistrationDataSet9";
-            this.dbDormitoryRegistrationDataSet9.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // tblExpensesBindingSource
-            // 
-            this.tblExpensesBindingSource.DataMember = "TblExpenses";
-            this.tblExpensesBindingSource.DataSource = this.dbDormitoryRegistrationDataSet9;
-            // 
-            // tblExpensesTableAdapter
-            // 
-            this.tblExpensesTableAdapter.ClearBeforeFill = true;
+            this.dataGridView1.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellDoubleClick);
             // 
             // expensesIDDataGridViewTextBoxColumn
             // 
@@ -148,6 +135,20 @@ namespace StudentRegistration_2
             this.otherDataGridViewTextBoxColumn.Name = "otherDataGridViewTextBoxColumn";
             this.otherDataGridViewTextBoxColumn.Width = 150;
             // 
+            // tblExpensesBindingSource
+            // 
+            this.tblExpensesBindingSource.DataMember = "TblExpenses";
+            this.tblExpensesBindingSource.DataSource = this.dbDormitoryRegistrationDataSet9;
+            // 
+            // dbDormitoryRegistrationDataSet9
+            // 
+            this.dbDormitoryRegistrationDataSet9.DataSetName = "DbDormitoryRegistrationDataSet9";
+            this.dbDormitoryRegistrationDataSet9.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // tblExpensesTableAdapter
+            // 
+            this.tblExpensesTableAdapter.ClearBeforeFill = true;
+            // 
             // formExpensList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -158,8 +159,8 @@ namespace StudentRegistration_2
             this.Text = "formExpensList";
             this.Load += new System.EventHandler(this.formExpensList_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dbDormitoryRegistrationDataSet9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblExpensesBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dbDormitoryRegistrationDataSet9)).EndInit();
             this.ResumeLayout(false);
 
         }

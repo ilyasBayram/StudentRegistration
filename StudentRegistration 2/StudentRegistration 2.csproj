@@ -96,6 +96,12 @@
     <Compile Include="formExpense.Designer.cs">
       <DependentUpon>formExpense.cs</DependentUpon>
     </Compile>
+    <Compile Include="formExpenseUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formExpenseUpdate.Designer.cs">
+      <DependentUpon>formExpenseUpdate.cs</DependentUpon>
+    </Compile>
     <Compile Include="formExpensList.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -134,6 +140,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="formExpense.resx">
       <DependentUpon>formExpense.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formExpenseUpdate.resx">
+      <DependentUpon>formExpenseUpdate.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="formExpensList.resx">
       <DependentUpon>formExpensList.cs</DependentUpon>

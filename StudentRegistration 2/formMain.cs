@@ -30,6 +30,46 @@ namespace StudentRegistration_2
             lblHour.Text = DateTime.Now.ToLongTimeString();
         }
 
+        private void addNewStudentToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form1 form = new Form1();
+            form.ShowDialog();
+        }
 
+        private void studentListToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            formStudentList form = new formStudentList();
+            form.ShowDialog();
+        }
+
+        private void updateStudentListToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            formStudenUpdate form3 = new formStudenUpdate();
+            form3.ShowDialog();
+        }
+
+        private void departmentUpdateToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Departments form = new Departments();
+            form.ShowDialog();
+        }
+
+        private void studentLoanToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            formDebt form = new formDebt();
+            form.ShowDialog();
+        }
+
+        private void expensListToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            formExpensList form = new formExpensList();
+            form.ShowDialog();
+        }
+
+        private void updateExpenseToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+
+        }
     }
 }

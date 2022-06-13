@@ -20,12 +20,15 @@ namespace StudentRegistration_2
         {
             InitializeComponent();
 
-            form2 = form;
+            frm = form;
         }
 
-        formStudentList form2 = new formStudentList();
+        public formStudenUpdate()
+        {
+        }
 
-        mySqlConnection conection = new mySqlConnection();
+        readonly formStudentList frm = new formStudentList();
+        readonly mySqlConnection conection = new mySqlConnection();
         // we try to reach those variables from student list form. that is why it starts with public. it must be reachable from everywhere.
         public string id, name, surname, roomNumber, nationalNumber, phoneNumber, birtDay, departmentName, mail, parentName, parentPhone, parentAdress;
 
@@ -51,7 +54,7 @@ namespace StudentRegistration_2
                 command.Parameters.AddWithValue("@p12", txBoxStudentID.Text);
                 command.ExecuteNonQuery();
                 conection.connection().Close();
-                form2.updatedata();
+                frm.updatedata();
                 MessageBox.Show("Update is successfull.");
                
 

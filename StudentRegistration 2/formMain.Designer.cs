@@ -64,6 +64,8 @@ namespace StudentRegistration_2
             this.lblDate = new System.Windows.Forms.Label();
             this.lblHour = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.expensListToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.updateExpenseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblStudentBindingSource)).BeginInit();
@@ -106,18 +108,21 @@ namespace StudentRegistration_2
             this.addNewStudentToolStripMenuItem.Name = "addNewStudentToolStripMenuItem";
             this.addNewStudentToolStripMenuItem.Size = new System.Drawing.Size(294, 34);
             this.addNewStudentToolStripMenuItem.Text = "Add new student";
+            this.addNewStudentToolStripMenuItem.Click += new System.EventHandler(this.addNewStudentToolStripMenuItem_Click);
             // 
             // studentListToolStripMenuItem
             // 
             this.studentListToolStripMenuItem.Name = "studentListToolStripMenuItem";
             this.studentListToolStripMenuItem.Size = new System.Drawing.Size(294, 34);
             this.studentListToolStripMenuItem.Text = "Student list";
+            this.studentListToolStripMenuItem.Click += new System.EventHandler(this.studentListToolStripMenuItem_Click);
             // 
             // updateStudentListToolStripMenuItem
             // 
             this.updateStudentListToolStripMenuItem.Name = "updateStudentListToolStripMenuItem";
             this.updateStudentListToolStripMenuItem.Size = new System.Drawing.Size(294, 34);
             this.updateStudentListToolStripMenuItem.Text = "Update student list";
+            this.updateStudentListToolStripMenuItem.Click += new System.EventHandler(this.updateStudentListToolStripMenuItem_Click);
             // 
             // departmentsToolStripMenuItem
             // 
@@ -132,6 +137,7 @@ namespace StudentRegistration_2
             this.departmentUpdateToolStripMenuItem.Name = "departmentUpdateToolStripMenuItem";
             this.departmentUpdateToolStripMenuItem.Size = new System.Drawing.Size(302, 34);
             this.departmentUpdateToolStripMenuItem.Text = "Department update";
+            this.departmentUpdateToolStripMenuItem.Click += new System.EventHandler(this.departmentUpdateToolStripMenuItem_Click);
             // 
             // roomsToolStripMenuItem
             // 
@@ -150,13 +156,16 @@ namespace StudentRegistration_2
             // studentLoanToolStripMenuItem
             // 
             this.studentLoanToolStripMenuItem.Name = "studentLoanToolStripMenuItem";
-            this.studentLoanToolStripMenuItem.Size = new System.Drawing.Size(237, 34);
+            this.studentLoanToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.studentLoanToolStripMenuItem.Text = "Student loan";
+            this.studentLoanToolStripMenuItem.Click += new System.EventHandler(this.studentLoanToolStripMenuItem_Click);
             // 
             // expensesToolStripMenuItem
             // 
             this.expensesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.addeExspenseToolStripMenuItem});
+            this.addeExspenseToolStripMenuItem,
+            this.expensListToolStripMenuItem,
+            this.updateExpenseToolStripMenuItem});
             this.expensesToolStripMenuItem.Name = "expensesToolStripMenuItem";
             this.expensesToolStripMenuItem.Size = new System.Drawing.Size(116, 30);
             this.expensesToolStripMenuItem.Text = "Expenses";
@@ -292,6 +301,7 @@ namespace StudentRegistration_2
             this.studentNameDataGridViewTextBoxColumn.HeaderText = "StudentName";
             this.studentNameDataGridViewTextBoxColumn.MinimumWidth = 8;
             this.studentNameDataGridViewTextBoxColumn.Name = "studentNameDataGridViewTextBoxColumn";
+            this.studentNameDataGridViewTextBoxColumn.ReadOnly = true;
             this.studentNameDataGridViewTextBoxColumn.Width = 150;
             // 
             // studentSurnameDataGridViewTextBoxColumn
@@ -300,6 +310,7 @@ namespace StudentRegistration_2
             this.studentSurnameDataGridViewTextBoxColumn.HeaderText = "StudentSurname";
             this.studentSurnameDataGridViewTextBoxColumn.MinimumWidth = 8;
             this.studentSurnameDataGridViewTextBoxColumn.Name = "studentSurnameDataGridViewTextBoxColumn";
+            this.studentSurnameDataGridViewTextBoxColumn.ReadOnly = true;
             this.studentSurnameDataGridViewTextBoxColumn.Width = 150;
             // 
             // studentRoomNoDataGridViewTextBoxColumn
@@ -308,6 +319,7 @@ namespace StudentRegistration_2
             this.studentRoomNoDataGridViewTextBoxColumn.HeaderText = "StudentRoomNo";
             this.studentRoomNoDataGridViewTextBoxColumn.MinimumWidth = 8;
             this.studentRoomNoDataGridViewTextBoxColumn.Name = "studentRoomNoDataGridViewTextBoxColumn";
+            this.studentRoomNoDataGridViewTextBoxColumn.ReadOnly = true;
             this.studentRoomNoDataGridViewTextBoxColumn.Width = 150;
             // 
             // tblStudentBindingSource
@@ -347,6 +359,20 @@ namespace StudentRegistration_2
             // timer1
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // expensListToolStripMenuItem
+            // 
+            this.expensListToolStripMenuItem.Name = "expensListToolStripMenuItem";
+            this.expensListToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.expensListToolStripMenuItem.Text = "Expens list";
+            this.expensListToolStripMenuItem.Click += new System.EventHandler(this.expensListToolStripMenuItem_Click);
+            // 
+            // updateExpenseToolStripMenuItem
+            // 
+            this.updateExpenseToolStripMenuItem.Name = "updateExpenseToolStripMenuItem";
+            this.updateExpenseToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.updateExpenseToolStripMenuItem.Text = "Update Expense";
+            this.updateExpenseToolStripMenuItem.Click += new System.EventHandler(this.updateExpenseToolStripMenuItem_Click);
             // 
             // formMain
             // 
@@ -408,5 +434,7 @@ namespace StudentRegistration_2
         private System.Windows.Forms.Label lblDate;
         private System.Windows.Forms.Label lblHour;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.ToolStripMenuItem expensListToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem updateExpenseToolStripMenuItem;
     }
 }
