@@ -13,10 +13,17 @@ namespace StudentRegistration_2
 {
     public partial class formStudenUpdate : Form
     {
-        public formStudenUpdate()
+        //we add "this" parameter to "form" object on studenlist form and when we careate form2 on this form we equals them. otherwise when we call
+        // updatedata method it does not work. with that way you can refresh data on a form from another form.
+        // In this case it refresh grid on studentlist form when you click update button on this form.
+        public formStudenUpdate(formStudentList form)
         {
             InitializeComponent();
+
+            form2 = form;
         }
+
+        formStudentList form2 = new formStudentList();
 
         mySqlConnection conection = new mySqlConnection();
         // we try to reach those variables from student list form. that is why it starts with public. it must be reachable from everywhere.
@@ -25,8 +32,6 @@ namespace StudentRegistration_2
         private void btnUpdate_Click(object sender, EventArgs e)
         {
 
-
-            
             try
             {
                 SqlCommand command = new SqlCommand("update Tblstudent set studentName=@p1, studentSurname=@p2, studentRoomNo= @p3, studentNationalNumber=@p4," +
@@ -46,8 +51,9 @@ namespace StudentRegistration_2
                 command.Parameters.AddWithValue("@p12", txBoxStudentID.Text);
                 command.ExecuteNonQuery();
                 conection.connection().Close();
-                
+                form2.updatedata();
                 MessageBox.Show("Update is successfull.");
+               
 
             }
             catch (Exception)
