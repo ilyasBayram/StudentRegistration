@@ -92,6 +92,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DbDormitoryRegistrationDataSet8.xsd</DependentUpon>
     </Compile>
+    <Compile Include="DbDormitoryRegistrationDataSet9.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DbDormitoryRegistrationDataSet9.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Departments.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -109,6 +114,18 @@
     </Compile>
     <Compile Include="formDebt.Designer.cs">
       <DependentUpon>formDebt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formExpense.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formExpense.Designer.cs">
+      <DependentUpon>formExpense.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formExpensList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formExpensList.Designer.cs">
+      <DependentUpon>formExpensList.cs</DependentUpon>
     </Compile>
     <Compile Include="formMain.cs">
       <SubType>Form</SubType>
@@ -139,6 +156,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="formDebt.resx">
       <DependentUpon>formDebt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formExpense.resx">
+      <DependentUpon>formExpense.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formExpensList.resx">
+      <DependentUpon>formExpensList.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="formMain.resx">
       <DependentUpon>formMain.cs</DependentUpon>
@@ -256,6 +279,17 @@
     </None>
     <None Include="DbDormitoryRegistrationDataSet8.xss">
       <DependentUpon>DbDormitoryRegistrationDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="DbDormitoryRegistrationDataSet9.xsc">
+      <DependentUpon>DbDormitoryRegistrationDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="DbDormitoryRegistrationDataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DbDormitoryRegistrationDataSet9.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DbDormitoryRegistrationDataSet9.xss">
+      <DependentUpon>DbDormitoryRegistrationDataSet9.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
