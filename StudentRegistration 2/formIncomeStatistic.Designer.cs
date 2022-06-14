@@ -29,9 +29,17 @@ namespace StudentRegistration_2
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.lblMoney = new System.Windows.Forms.Label();
             this.lblMoneyInBank = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cmBoxChoosenMounth = new System.Windows.Forms.ComboBox();
+            this.lblMounthChoose = new System.Windows.Forms.Label();
+            this.lblChoosenMounth = new System.Windows.Forms.Label();
+            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.lblMoneyForMounth = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             this.SuspendLayout();
             // 
             // lblMoney
@@ -40,9 +48,8 @@ namespace StudentRegistration_2
             this.lblMoney.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblMoney.Location = new System.Drawing.Point(687, 23);
             this.lblMoney.Name = "lblMoney";
-            this.lblMoney.Size = new System.Drawing.Size(70, 26);
+            this.lblMoney.Size = new System.Drawing.Size(0, 26);
             this.lblMoney.TabIndex = 0;
-            this.lblMoney.Text = "label1";
             // 
             // lblMoneyInBank
             // 
@@ -54,25 +61,79 @@ namespace StudentRegistration_2
             this.lblMoneyInBank.TabIndex = 1;
             this.lblMoneyInBank.Text = "Money in bank :";
             // 
-            // comboBox1
+            // cmBoxChoosenMounth
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(249, 25);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(193, 28);
-            this.comboBox1.TabIndex = 2;
+            this.cmBoxChoosenMounth.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(196)))), ((int)(((byte)(15)))));
+            this.cmBoxChoosenMounth.FormattingEnabled = true;
+            this.cmBoxChoosenMounth.Location = new System.Drawing.Point(256, 25);
+            this.cmBoxChoosenMounth.Name = "cmBoxChoosenMounth";
+            this.cmBoxChoosenMounth.Size = new System.Drawing.Size(193, 28);
+            this.cmBoxChoosenMounth.TabIndex = 2;
+            this.cmBoxChoosenMounth.Text = "Mounths";
+            this.cmBoxChoosenMounth.SelectedIndexChanged += new System.EventHandler(this.cmBoxChoosenMounth_SelectedIndexChanged);
+            // 
+            // lblMounthChoose
+            // 
+            this.lblMounthChoose.AutoSize = true;
+            this.lblMounthChoose.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblMounthChoose.Location = new System.Drawing.Point(26, 27);
+            this.lblMounthChoose.Name = "lblMounthChoose";
+            this.lblMounthChoose.Size = new System.Drawing.Size(196, 26);
+            this.lblMounthChoose.TabIndex = 3;
+            this.lblMounthChoose.Text = "Choose a mounth :";
+            // 
+            // lblChoosenMounth
+            // 
+            this.lblChoosenMounth.AutoSize = true;
+            this.lblChoosenMounth.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblChoosenMounth.Location = new System.Drawing.Point(498, 70);
+            this.lblChoosenMounth.Name = "lblChoosenMounth";
+            this.lblChoosenMounth.Size = new System.Drawing.Size(199, 26);
+            this.lblChoosenMounth.TabIndex = 5;
+            this.lblChoosenMounth.Text = "Money for mounth :";
+            // 
+            // chart1
+            // 
+            chartArea1.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chart1.Legends.Add(legend1);
+            this.chart1.Location = new System.Drawing.Point(12, 196);
+            this.chart1.Name = "chart1";
+            series1.ChartArea = "ChartArea1";
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.chart1.Series.Add(series1);
+            this.chart1.Size = new System.Drawing.Size(592, 256);
+            this.chart1.TabIndex = 6;
+            this.chart1.Text = "chart1";
+            // 
+            // lblMoneyForMounth
+            // 
+            this.lblMoneyForMounth.AutoSize = true;
+            this.lblMoneyForMounth.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblMoneyForMounth.Location = new System.Drawing.Point(589, 135);
+            this.lblMoneyForMounth.Name = "lblMoneyForMounth";
+            this.lblMoneyForMounth.Size = new System.Drawing.Size(0, 26);
+            this.lblMoneyForMounth.TabIndex = 7;
             // 
             // formIncomeStatistic
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(188)))), ((int)(((byte)(156)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.lblMoneyForMounth);
+            this.Controls.Add(this.chart1);
+            this.Controls.Add(this.lblChoosenMounth);
+            this.Controls.Add(this.lblMounthChoose);
+            this.Controls.Add(this.cmBoxChoosenMounth);
             this.Controls.Add(this.lblMoneyInBank);
             this.Controls.Add(this.lblMoney);
             this.Name = "formIncomeStatistic";
             this.Text = "formIncomeStatistic";
             this.Load += new System.EventHandler(this.formIncomeStatistic_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -82,6 +143,10 @@ namespace StudentRegistration_2
 
         private System.Windows.Forms.Label lblMoney;
         private System.Windows.Forms.Label lblMoneyInBank;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cmBoxChoosenMounth;
+        private System.Windows.Forms.Label lblMounthChoose;
+        private System.Windows.Forms.Label lblChoosenMounth;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
+        private System.Windows.Forms.Label lblMoneyForMounth;
     }
 }
