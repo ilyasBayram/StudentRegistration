@@ -49,6 +49,8 @@ namespace StudentRegistration_2
             this.txBoxStudenName = new System.Windows.Forms.TextBox();
             this.lblStudentName = new System.Windows.Forms.Label();
             this.tblDebtTableAdapter1 = new StudentRegistration_2.DbDormitoryRegistrationDataSet3TableAdapters.TblDebtTableAdapter();
+            this.txBoxpaidMounth = new System.Windows.Forms.TextBox();
+            this.lblPaidMounth = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblDebtBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dbDormitoryRegistrationDataSet3)).BeginInit();
@@ -175,7 +177,7 @@ namespace StudentRegistration_2
             // 
             this.btnPayment.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(109)))), ((int)(((byte)(224)))));
             this.btnPayment.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnPayment.Location = new System.Drawing.Point(55, 321);
+            this.btnPayment.Location = new System.Drawing.Point(70, 340);
             this.btnPayment.Name = "btnPayment";
             this.btnPayment.Size = new System.Drawing.Size(173, 72);
             this.btnPayment.TabIndex = 7;
@@ -225,6 +227,25 @@ namespace StudentRegistration_2
             // 
             this.tblDebtTableAdapter1.ClearBeforeFill = true;
             // 
+            // txBoxpaidMounth
+            // 
+            this.txBoxpaidMounth.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(196)))), ((int)(((byte)(15)))));
+            this.txBoxpaidMounth.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txBoxpaidMounth.Location = new System.Drawing.Point(196, 279);
+            this.txBoxpaidMounth.Name = "txBoxpaidMounth";
+            this.txBoxpaidMounth.Size = new System.Drawing.Size(165, 30);
+            this.txBoxpaidMounth.TabIndex = 13;
+            // 
+            // lblPaidMounth
+            // 
+            this.lblPaidMounth.AutoSize = true;
+            this.lblPaidMounth.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblPaidMounth.Location = new System.Drawing.Point(7, 279);
+            this.lblPaidMounth.Name = "lblPaidMounth";
+            this.lblPaidMounth.Size = new System.Drawing.Size(152, 26);
+            this.lblPaidMounth.TabIndex = 12;
+            this.lblPaidMounth.Text = "Paid Mounth  :";
+            // 
             // formDebt
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -232,6 +253,8 @@ namespace StudentRegistration_2
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(188)))), ((int)(((byte)(156)))));
             this.ClientSize = new System.Drawing.Size(1231, 424);
+            this.Controls.Add(this.txBoxpaidMounth);
+            this.Controls.Add(this.lblPaidMounth);
             this.Controls.Add(this.txBoxStudentSurname);
             this.Controls.Add(this.lblStudentSurname);
             this.Controls.Add(this.txBoxStudenName);
@@ -278,5 +301,7 @@ namespace StudentRegistration_2
         private DbDormitoryRegistrationDataSet3 dbDormitoryRegistrationDataSet3;
         private System.Windows.Forms.BindingSource tblDebtBindingSource1;
         private DbDormitoryRegistrationDataSet3TableAdapters.TblDebtTableAdapter tblDebtTableAdapter1;
+        private System.Windows.Forms.TextBox txBoxpaidMounth;
+        private System.Windows.Forms.Label lblPaidMounth;
     }
 }

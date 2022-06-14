@@ -57,13 +57,20 @@ namespace StudentRegistration_2
 
             try
             {
-                //it updates remaining debt column vith data on remaning textbox.
+                //it updates remaining debt column with data on remaning textbox.
                 SqlCommand command = new SqlCommand("update TblDebt set studentRemainingDebt=@p1 where studentID=@p2", connection.connection());
                 command.Parameters.AddWithValue("@p1", txBoxRemain.Text);
                 command.Parameters.AddWithValue("@p2", txBoxStudentID.Text);
                 command.ExecuteNonQuery();
                 connection.connection().Close();
-                MessageBox.Show("New payment updated..");
+                
+
+                SqlCommand command2 = new SqlCommand("insert into Tblbank (paidmounth, paidamount) values (@b1, @b2)", connection.connection());
+                command2.Parameters.AddWithValue("@b1", txBoxpaidMounth.Text);
+                command2.Parameters.AddWithValue("@b2", txBoxPaid.Text);
+                command2.ExecuteNonQuery();
+                connection.connection().Close();
+                MessageBox.Show("Update is successfull.");
                 this.tblDebtTableAdapter1.Fill(this.dbDormitoryRegistrationDataSet3.TblDebt);
             }
             catch (Exception)
