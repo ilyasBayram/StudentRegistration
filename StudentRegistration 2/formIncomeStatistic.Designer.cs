@@ -39,6 +39,7 @@ namespace StudentRegistration_2
             this.lblChoosenMounth = new System.Windows.Forms.Label();
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.lblMoneyForMounth = new System.Windows.Forms.Label();
+            this.lblMoneyChoosenMounth = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -117,12 +118,22 @@ namespace StudentRegistration_2
             this.lblMoneyForMounth.Size = new System.Drawing.Size(0, 26);
             this.lblMoneyForMounth.TabIndex = 7;
             // 
+            // lblMoneyChoosenMounth
+            // 
+            this.lblMoneyChoosenMounth.AutoSize = true;
+            this.lblMoneyChoosenMounth.Location = new System.Drawing.Point(724, 80);
+            this.lblMoneyChoosenMounth.Name = "lblMoneyChoosenMounth";
+            this.lblMoneyChoosenMounth.Size = new System.Drawing.Size(51, 20);
+            this.lblMoneyChoosenMounth.TabIndex = 8;
+            this.lblMoneyChoosenMounth.Text = "label1";
+            // 
             // formIncomeStatistic
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(188)))), ((int)(((byte)(156)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lblMoneyChoosenMounth);
             this.Controls.Add(this.lblMoneyForMounth);
             this.Controls.Add(this.chart1);
             this.Controls.Add(this.lblChoosenMounth);
@@ -148,5 +159,6 @@ namespace StudentRegistration_2
         private System.Windows.Forms.Label lblChoosenMounth;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
         private System.Windows.Forms.Label lblMoneyForMounth;
+        private System.Windows.Forms.Label lblMoneyChoosenMounth;
     }
 }
